@@ -20,19 +20,40 @@ font-family: 'Nunito Sans', sans-serif;
 /*________________________________*/
 /*____________INDEX_______________*/
 /*________________________________*/
+
+
+/*------------  NAV ------------ */
+
 #nav_drawer {
     position: absolute;
     width: 200px;
-    height: 100vh;
+    height: 100vh;    
     background-color: var(--azul-bg-color);
+    position: fixed;
+    flex-direction: column;
     display: flex;
 }
 #navbar_logo{
     width: 150px;
     height: 150px;
-    padding-left: 25px;
-    padding-top: 25px;
+    padding: 25px;
 }
+
+#nav_drawer span {
+    font-weight: 700;
+    font-size: 19px;
+}
+
+#nav_drawer a {
+    margin: 5px 30px;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--cafe-bg-color);
+}
+
+
+
 #buttonreg_nav{
     width: 150px;
     height: 30px;
@@ -52,6 +73,7 @@ font-family: 'Nunito Sans', sans-serif;
 }
 
 #buttonreg_nav:hover{
+    cursor: pointer;
     border: 2px solid var(--cafe-bg-color);
     background-color: var(--piel-bg-color);
     box-shadow: 2px 2px 10px 2px #8000006c;
@@ -122,6 +144,34 @@ font-family: 'Nunito Sans', sans-serif;
 
 }
 
+
+
+
+
+#section_Recetas div{
+    width: 900px;
+    height: 1500px;
+    background-color: red;
+
+}
+
+#section_servicios div{
+    width: 900px;
+    height: 1500px;
+    background-color: rgb(0, 26, 255);
+
+}
+
+
+
+
+
+
+
+
+
+
+
 /*________________________________*/
 /*____________REGISTRO____________*/
 /*________________________________*/
@@ -178,5 +228,10 @@ font-family: 'Nunito Sans', sans-serif;
     color: var(--cafe-bg-color);
 }
 
-
+#btn_enviar_registro:hover{
+    cursor: pointer;
+    border: 2px solid var(--cafe-bg-color);
+    background-color: var(--piel-bg-color);
+    box-shadow: 2px 2px 10px 2px #8000006c;
+}
 
