@@ -34,7 +34,6 @@ font-family: 'Nunito Sans', sans-serif;
 
 }
 
-
 .container_recetas{
     position: absolute;
     width: 80vw;
@@ -54,10 +53,11 @@ font-family: 'Nunito Sans', sans-serif;
 }
 .receta img{
     width: 80%;
+    height: 400px;
     margin-left: 10%;
     margin-bottom: 25px;
-    border-radius:5%;
-    
+    border-radius:30px;
+    object-fit: cover;
 }
 
 .receta h2{

@@ -97,7 +97,6 @@ font-family: 'Nunito Sans', sans-serif;
     display: flex;
     background-color: var(--piel-bg-color);
     font-weight: 600;
-    
     background: rgba(3, 3, 3, 0.2) fixed no-repeat 50% 50%;
     background-size: cover;
     background-image: url("../img/fondo_4.png");
@@ -155,12 +154,103 @@ font-family: 'Nunito Sans', sans-serif;
 /*____________________________________ RECETAS _________________________________________*/
 /*_____________________________________________________________________________________*/
 
-#section_Recetas div{
+#section_Recetas {
     width: 100%;
     height: 100vh;
-    background-color: var(--piel-bg-color);
-
+    background: rgb(255,232,168);
+    background: linear-gradient(0deg, rgba(255,232,168,1) 0%, #898f0fcb 30%, rgba(255, 255, 231, 0.5) 70%, rgba(255,255,255,1) 100%);
+    background-size: cover;
+    background-image: url("../img/fondo_5.png");
 }
+
+
+.titulo {
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 100px;
+    color: #000000;
+    user-select: none;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.content-all{
+    width: 100%;
+    perspective: 1000px;
+    align-items: center;
+    padding-top: 10%;
+}
+
+.content-carrousel{
+    width: 200px;
+    animation: rotar 50s infinite linear;
+    transform-style: preserve-3d;
+    margin: auto;
+}
+
+
+
+.content-carrousel figure{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+
+.content-carrousel h4{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    text-decoration: none;
+}
+
+.content-carrousel figure:nth-child(1){
+    transform: rotateY(0deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(2){
+    transform: rotateY(45deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(3){
+    transform: rotateY(90deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(4){
+    transform: rotateY(135deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(5){
+    transform: rotateY(180deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(6){
+    transform: rotateY(225deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(7){
+    transform: rotateY(270deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(8){
+    transform: rotateY(315deg) translateZ(300px);
+}
+
+.content-carrousel img{
+    width: 200px;
+    align-items: center;
+    box-shadow: 1px 1px 5px 2px rgb(123, 123, 123);
+}
+.content-carrousel img:hover{
+    width: 210px;
+    align-items: center;
+    margin-top: -5px;
+    margin-right: -5px;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 1px 1px 5px 2px rgb(255, 255, 255);
+}
+
+@keyframes rotar{
+    from{
+        transform: rotateY(0deg);
+    }to{
+        transform: rotateY(360deg);
+    }
+}
+
+
 /*_____________________________________________________________________________________*/
 /*____________________________________ SERVICIOS _________________________________________*/
 /*_____________________________________________________________________________________*/
