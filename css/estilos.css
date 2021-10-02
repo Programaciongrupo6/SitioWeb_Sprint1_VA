@@ -52,6 +52,11 @@ font-family: 'Nunito Sans', sans-serif;
     color: var(--cafe-bg-color);
 }
 
+.info{
+    margin: 15px 0px;
+}
+
+
 
 
 #buttonreg_nav{
@@ -79,6 +84,9 @@ font-family: 'Nunito Sans', sans-serif;
     box-shadow: 2px 2px 10px 2px #8000006c;
 }
 
+
+
+
 #contenedor{
     width: calc(100% - 200px);
     height: 100vh;
@@ -88,7 +96,7 @@ font-family: 'Nunito Sans', sans-serif;
 }
 
 /*________________________________*/
-/*------------  NAV ------------ */
+/*------------  HOME ------------ */
 /*________________________________*/
 #section_Home{
     background-color: rgb(255, 255, 255);
@@ -121,6 +129,7 @@ font-family: 'Nunito Sans', sans-serif;
     width: 300px;
     margin: 0px 10px 15px 179px;
     font-size: 50px;
+    transition: all 1.0s;
     user-select: none;
 }
 
@@ -128,6 +137,7 @@ font-family: 'Nunito Sans', sans-serif;
     font-size: 60px;
     transition: all 1.0s;
     user-select: none;
+    color: var(--piel-bg-color);
 }
 
 #section_Home #descripcion{
@@ -142,6 +152,10 @@ font-family: 'Nunito Sans', sans-serif;
 #section_Home #car:hover #nombre1{
     height: 50px;
     margin-top: -5%;
+    font-size: 70px;
+}
+#section_Home #car:hover #nombre2{
+    font-size: 70px;
 }
 #section_Home #car:hover span{
     font-size: 70px;
@@ -159,16 +173,17 @@ font-family: 'Nunito Sans', sans-serif;
     height: 100vh;
     background: rgb(255,232,168);
     background: linear-gradient(0deg, rgba(255,232,168,1) 0%, #898f0fcb 30%, rgba(255, 255, 231, 0.5) 70%, rgba(255,255,255,1) 100%);
+    background: rgba(3, 3, 3, 0.2) local no-repeat 50% 50%;
     background-size: cover;
-    background-image: url("../img/fondo_5.png");
+    background-image: url("../img/fondo_6.png");
 }
 
 
 .titulo {
     font-size: 50px;
     text-align: center;
-    padding-bottom: 40px;
-    padding-top: 100px;
+    padding-bottom: 0px;
+    padding-top: 200px;
     color: #000000;
     user-select: none;
     font-family: 'Nunito Sans', sans-serif;
@@ -178,7 +193,7 @@ font-family: 'Nunito Sans', sans-serif;
     width: 100%;
     perspective: 1000px;
     align-items: center;
-    padding-top: 10%;
+    padding-top: 5%;
 }
 
 .content-carrousel{
