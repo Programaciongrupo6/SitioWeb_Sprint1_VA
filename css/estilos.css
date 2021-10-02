@@ -17,12 +17,12 @@ font-family: 'Nunito Sans', sans-serif;
     --piel-bg-color: #FFE8BC;
 }
 
-/*________________________________*/
 /*____________INDEX_______________*/
+
+
 /*________________________________*/
-
-
 /*------------  NAV ------------ */
+/*________________________________*/
 
 #nav_drawer {
     position: absolute;
@@ -86,6 +86,10 @@ font-family: 'Nunito Sans', sans-serif;
 
 
 }
+
+/*________________________________*/
+/*------------  NAV ------------ */
+/*________________________________*/
 #section_Home{
     background-color: rgb(255, 255, 255);
     width: 100%;
@@ -96,12 +100,12 @@ font-family: 'Nunito Sans', sans-serif;
     
     background: rgba(3, 3, 3, 0.2) fixed no-repeat 50% 50%;
     background-size: cover;
-    background-image: url("../img/fondo_seccion_3.png");
+    background-image: url("../img/fondo_4.png");
 
 }
 
 #section_Home #car{
-    width: 500px;
+    width: 600px;
     height: 300px;
     margin: auto;
 }
@@ -128,36 +132,41 @@ font-family: 'Nunito Sans', sans-serif;
 }
 
 #section_Home #descripcion{
-    width: 480px;
+    width: 580px;
     margin: 10px;
     line-height: 25px;
-    font-size: 18px;
+    font-size: 20px;
     text-align: justify;
     user-select: none;
 }
 
 #section_Home #car:hover #nombre1{
     height: 50px;
+    margin-top: -5%;
 }
 #section_Home #car:hover span{
     font-size: 70px;
-
+    color: var(--piel-bg-color);
 }
 
 
 
-
+/*_____________________________________________________________________________________*/
+/*____________________________________ RECETAS _________________________________________*/
+/*_____________________________________________________________________________________*/
 
 #section_Recetas div{
-    width: 900px;
-    height: 1500px;
-    background-color: red;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--piel-bg-color);
 
 }
-
+/*_____________________________________________________________________________________*/
+/*____________________________________ SERVICIOS _________________________________________*/
+/*_____________________________________________________________________________________*/
 #section_servicios div{
     width: 900px;
-    height: 1500px;
+    height: 0px;
     background-color: rgb(0, 26, 255);
 
 }
@@ -172,9 +181,9 @@ font-family: 'Nunito Sans', sans-serif;
 
 
 
-/*________________________________*/
-/*____________REGISTRO____________*/
-/*________________________________*/
+/*_____________________________________________________________________________________*/
+/*____________________________________ REGISTRO _________________________________________*/
+/*_____________________________________________________________________________________*/
 
 #contenedor_registro{
     width: 100vw;
@@ -194,8 +203,8 @@ font-family: 'Nunito Sans', sans-serif;
 }
 
 #form_registro_usuario #logo{
-    width:100px;
-	margin:10px 100px 10px 100px;
+    width:150px;
+	margin:10px 75px 10px 75px;
 }
 
 

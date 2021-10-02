@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,15 +9,19 @@
     <link rel="shortcut icon" href="img/logo.png" />
     <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
     <div id="contenedor_registro">
         <form action="" id="form_registro_usuario">
-            <img src="img/logo-removebg.png" alt="" id="logo">
+            <a href="index.html">
+                <img src="img/logo_nombre-removebg.png" alt="" id="logo">
+            </a>
             <input type="text" id="in_usuario" placeholder="Usuario">
             <input type="password" id="in_contraseña" placeholder="Contraseña">
-            <button id="btn_enviar_registro"> Enviar </button>
+            <button id="btn_enviar_registro" onclick="validar_nombreUsuario(), validar_contrasena()"> Enviar </button>
         </form>
     </div>
-    
+    <script src="js/validaciones.js"></script>
 </body>
+
 </html>
