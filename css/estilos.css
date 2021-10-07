@@ -57,10 +57,20 @@ html{
 
 .info{
     margin: 15px 0px;
+    list-style:none;
 }
 
+.contactanos{
+    width: 180px;
+    height: 100px;
+}
 
-
+.contactanos img{
+    width:  40px;
+    height: 40px;
+    margin-right: -25px;
+    margin-top: 20px;
+}
 
 #buttonreg_nav{
     width: 150px;
@@ -76,7 +86,6 @@ html{
 }
 
 #link_registro{
-
     text-decoration: none;
 }
 
@@ -87,14 +96,10 @@ html{
     box-shadow: 2px 2px 10px 2px #8000006c;
 }
 
-
-
-
 #contenedor{
     width: calc(100% - 200px);
     height: 100vh;
     margin-left: 200px;
-
 
 }
 
