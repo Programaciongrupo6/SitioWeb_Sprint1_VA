@@ -20,6 +20,8 @@ html{
     --piel-bg-color: #FFE8BC;
 }
 
+
+
 /*____________INDEX_______________*/
 
 
@@ -54,6 +56,17 @@ html{
     text-decoration: none;
     color: var(--cafe-bg-color);
 }
+#iconoss img{
+    width: 30px;
+    }
+#iconoss{
+    margin-left: 30px;
+    list-style: none;
+    }
+    
+#iconoss a{
+    margin: 5px;
+    }
 
 .info{
     margin: 15px 0px;
