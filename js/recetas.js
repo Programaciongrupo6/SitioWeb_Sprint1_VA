@@ -105,18 +105,103 @@ const jsonData = {
         "Una vez homogénea, llevar al molde y cubrir con almendras al gusto y más canela. Hornear durante unos 40-45 minutos. Comprobar el punto con un palillo; el tiempo final depende del molde y tipo de horno. Esperar un poco fuera del horno antes de abrir y dejar enfriar por completo.",
         "Gana con el reposo de unas horas, cuando se asienta el relleno. Servir con más canela molida al gusto y guardar lo que sobre en la parte menos fría de la nevera."
       ]
+    },
+    {
+      "id": "receta_3",
+      "titulo": "Sorbete de mango y banano ",
+      "ruta": "img/recetas/receta_3.jpg",
+      "Difilcultad": "Fácil",
+      "TiempoTotal": "2 horas",
+      "Elaboracion": "2 horas",
+      "Coccion": "N/A",
+      "ingredientes": [
+        {
+          "ingrediente": "Mango mediano",
+          "cantidad": "1 unid"
+        },
+        {
+          "ingrediente": "Banano",
+          "cantidad": "1 unid"
+        },
+        {
+          "ingrediente": "Chocolate negro sin azúcar para decorar",
+          "cantidad": "--"
+        },
+        {
+          "ingrediente": "Leche",
+          "cantidad": "15 ml"
+        }
+      ],
+      "descripcion": [
+        "Para elaborar este sorbete de mango y plátano debemos comenzar pelando las frutas y cortando trozos de 2 cm de espesor. Colocamos sobre una fuente y llevamos al congelador.",
+        "Cuando las frutas estén congeladas, las colocamos en una procesadora o batidora junto con la leche y procesamos hasta formar una preparación cremosa homogénea.",
+        "Servimos en copas o recipientes individuales y decoramos con una cucharada de chocolate picado."
+      ]
+    },
+    {
+      "id": "receta_4",
+      "titulo": "Rocas de chocolate",
+      "ruta": "img/recetas/receta_4.jpg",
+      "Difilcultad": "Fácil",
+      "TiempoTotal": "30 minutos",
+      "Elaboracion": "30 minutos",
+      "Coccion": "N/A",
+      "ingredientes": [
+        {
+          "ingrediente": "Cereales integrales de trigo sin azúcares añadidos",
+          "cantidad": "75 g"
+        },
+        {
+          "ingrediente": "Mezcla de frutos secos",
+          "cantidad": "75 g"
+        },
+        {
+          "ingrediente": "Chocolate negro sin azúcar",
+          "cantidad": "150 g"
+        }
+      ],
+      "descripcion": [
+        "Pon en un bol los cereales crujientes y rómpelos con las manos para que queden trozos pequeños. Pica los frutos secos a cuchillo, pero no muy pequeños, para que se identifiquen al comerlos en las rocas. Puedes utilizar una mezcla de nueces, almendras, avellanas, anacardos, cacahuetes, nueces de macadamia o si lo prefieres, un fruto seco sólo.",
+        "Trocea el chocolate para fundirlo al baño maría en un cazo adecuado o en el microondas. Recuerda no pasar de 30 segundos cada vez, y retirarlo antes de que se funda del todo, es preferible terminar batiéndolo para, con su propio calor, conseguir un chocolate líquido brillante. Vierte el chocolate fundido sobre la mezcla de cereales integrales y frutos secos picados y mezcla bien. A continuación, con una cuchara ve cogiendo porciones y ve depositándolas sobre papel para hornear, formando rocas irregulares. Una vez hechas todas las rocas, deja en un lugar fresco para que se enfríe y el chocolate se endurezca.",
+        "Tras el reposo, puedes retirar del papel las rocas de chocolate saludables y guardarlas en un recipiente con tapa hermética."
+      ]
     }
   ]
 };
-let sectionItem = document.getElementById("section_Receta_vista");
+
+function inicio(params) {
+  var paramstr = window.location.search.substr(1);
+  var paramarr = paramstr.split("&");
+  var params = {};
+  for (var i = 0; i < paramarr.length; i++) {
+    var tmparr = paramarr[i].split("=");
+    params[tmparr[0]] = tmparr[1];
+  }
+  if (params['receta']) {
+    mensajeFuncion(params['receta'])
+  } else {
+    console.log('No se envió el parámetro variable');
+  }
+}
+
+
+
+
+
+
+
+
+let sectionItem = document.getElementById("container_recetas");
 
 
 function mensajeFuncion(params) {
+  console.log(params)
   let recetasArray = jsonData.recetas
   for (let i = 0; i < recetasArray.length; i++) {
     const element = recetasArray[i];
+    console.log(params +"<>"+ element.id)
     if (params == element.id) {
-
+      
       divDeleted = document.getElementById("receta_1");
       if (!divDeleted) { }
       else {
@@ -136,7 +221,7 @@ function mostrarReceta(params) {
     ingredientesString += '<tr><td>' + params.ingredientes[i].ingrediente + '</td><td>' + params.ingredientes[i].cantidad + '</td></ >'
   }
   let tablaIngredientes = '<table class="table table-striped table-bordered"><thead><tr><td>INGREDIENTES</td><td>CANTIDAD</td></tr></thead><tbody>' + ingredientesString + '</tbody></table>'
-
+  
   // crear el parrafo
   let descripcionString = ''
   for (let i = 0; i < params.descripcion.length; i++) {
@@ -150,10 +235,11 @@ function mostrarReceta(params) {
   let htmlParte5 = '<h2>Elaboración: <span>' + params.Elaboracion + '</span></h2>'
   let htmlParte6 = '<h2>Cocción: <span>' + params.Coccion + '</span></h2>'
   let htmlParte7 = '<div><h3>Que necesitamos...</h3>' + tablaIngredientes + '<div id="separador"></div>' + descripcionString + '<div id="separador_receta"></div></div>'
-
+  
   let htmlUnido = '<div class="receta" id="receta_1">' + htmlParte1 + htmlParte2 + htmlParte3 + htmlParte4 + htmlParte5 + htmlParte6 + htmlParte7 + '</div>'
   sectionItem.innerHTML += htmlUnido
-
+  
+  /*
   let tituloReceta = document.getElementById('titulo-receta');
   let sectionRecetas = document.getElementById('section_Recetas')
   let recetaTitleVista = document.getElementById('receta_title_vista')
@@ -162,5 +248,8 @@ function mostrarReceta(params) {
   sectionItem.style.cssText = 'background: rgb(255 245 217);'
   recetaTitleVista.style.cssText = 'margin-top: 0px;'
 
-
+*/
 }
+
+
+inicio()

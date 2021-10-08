@@ -69,11 +69,15 @@
             <div class="content-all">
                 <div class="content-carrousel">
                     <figure>
-                        <img onclick="mensajeFuncion('receta_1')" src="img/recetas/receta_1.jpg">
-                        <h4>BROWNIE</h4>
+                        <a href="recetas.html?receta=receta_1">
+                            <img src="img/recetas/receta_1.jpg">
+                            <h4>BROWNIE</h4>
+                        </a>
                     </figure>
                     <figure>
-                        <img onclick="mensajeFuncion('receta_2')" src="img/recetas/receta_2.jpg">
+                        <a href="recetas.html?receta=receta_2">
+                            <img src="img/recetas/receta_2.jpg">
+                        </a>
                         <h4>PASTEL DE MANZANA, AVENA Y ALMENDRA</h4>
                     </figure>
                     <figure>
@@ -83,21 +87,26 @@
                         <h4> SORBETE DE MANGO Y BANANO </h4>
                     </figure>
                     <figure>
-                        <a href="recetas.html#receta_4">
+                        <a href="recetas.html?receta=receta_4">
                             <img src="img/recetas/receta_4.jpg">
                         </a>
                         <h4> ROCAS DE CHOCOLATE </h4>
                     </figure>
                     <figure>
-                        <img onclick="mensajeFuncion('receta_1')" src="img/recetas/receta_1.jpg">
+                        <a href="recetas.html?receta=receta_1">
+                            <img src="img/recetas/receta_1.jpg">
+                        </a>
                         <h4> BROWNIE </h4>
+
                     </figure>
                     <figure>
-                        <img onclick="mensajeFuncion('receta_2')" src="img/recetas/receta_2.jpg">
+                        <a href="recetas.html?receta=receta_2">
+                            <img src="img/recetas/receta_2.jpg">
+                        </a>
                         <h4> PASTEL DE MANZANA </h4>
                     </figure>
                     <figure>
-                        <a href="recetas.html#receta_3">
+                        <a href="recetas.html?receta=receta_3">
                             <img src="img/recetas/receta_3.jpg">
                         </a>
                         <h4> SORBETE DE MANGO Y BANANO </h4>
@@ -109,91 +118,10 @@
                         <h4> ROCAS DE CHOCOLATE </h4>
                     </figure>
                 </div>
+                <input type="range"min="0" max="500" step="50" id="rangeCarrousel">
             </div>
         </section>
-        <section id="section_Receta_vista">
-            <!--
 
-            <div class="receta" id="receta_1">
-                <h1>Brownie</h1>
-                <img src="img/recetas/receta_1.jpg" alt="">
-                <h2>Difilcultad: <span>Fácil</span></h2>
-                <h2>Tiempo Total: <span>30 minutos</span></h2>
-                <h2>Elaboración: <span>10 minutos</span></h2>
-                <h2>Cocción: <span>20 minutos</span></h2>
-                <div>
-                    <h3>Que necesitamos...</h3>
-                    <table class="table table-striped table-bordered">
-                        <thead>
-                            <tr>
-                                <td>INGREDIENTES</td>
-                                <td>CANTIDAD</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Banano</td>
-                                <td>180 g</td>
-                            </tr>
-                            <tr>
-                                <td>Huevos</td>
-                                <td>2 unid</td>
-                            </tr>
-                            <tr>
-                                <td>Esencia de vainilla </td>
-                                <td>5 ml</td>
-                            </tr>
-                            <tr>
-                                <td>Cacao puro en polvo sin azúcar </td>
-                                <td>50 g</td>
-                            </tr>
-                            <tr>
-                                <td>Chocolate negro sin azúcar picado </td>
-                                <td>80 g</td>
-                            </tr>
-                            <tr>
-                                <td>Bicarbonato sódico </td>
-                                <td>6 g</td>
-                            </tr>
-                            <tr>
-                                <td>Sal </td>
-                                <td>1 g</td>
-                            </tr>
-                            <tr>
-                                <td>Canela molida (opcional) </td>
-                                <td>1 g</td>
-                            </tr>
-                            <tr>
-                                <td>Leche o bebida vegetal</td>
-                                <td>10 ml</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div id="separador"></div>
-                    <p>
-                        Precalentar el horno a 175ºC y cubrir con papel de hornear un molde cuadrado de unos 20 cm de
-                        lado. Si es más pequeño, las piezas de brownie saldrán más gruesas y algo más difíciles de
-                        cortar, pero también más esponjosas.
-                        <br><br>
-                        Pelar los bananos y cortarlos en trozos. Colocar en un recipiente con los huevos y batir con un
-                        tenedor, machacándolos bien, o usar una batidora. También se puede emplear un procesador de
-                        alimentos o batidora de vaso. Incorporar el resto de ingredientes, salvo el chocolate, y batir
-                        un poco más hasta que no queden grumos secos.
-                        <br><br>
-                        Añadir el chocolate negro picado o troceado y remover con suavidad. Llenar el molde y hornear
-                        durante unos 20 minutos. Al pinchar el centro con un palillo debe salir ligeramente manchado,
-                        pero no mojado. Dejar enfriar fuera del horno unos 10 minutos antes de desmoldar y trasladar con
-                        el propio papel a una rejilla.
-                        <br><br>
-                        Esperar a que se enfríe por completo antes de cortar en piezas. Se cortará mejor si lo dejamos
-                        una o dos horas en la nevera, para que se asiente la miga. Guardar en un recipiente hermético en
-                        la nevera, sobre todo si hace mucho calor.
-                    </p>
-                    <div id="separador_receta"></div>
-                </div>
-            </div>
-            -->
-        </section>
 
         <section id="section_productos">
             <div>
@@ -212,6 +140,7 @@
 
         </div>
         <script src="js/recetas.js"></script>
+        <script src="js/slider.js"></script>
 </body>
 
 

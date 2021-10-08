@@ -18,6 +18,8 @@ html{
     --naranja-bg-color: #FF9021;
     --azul-bg-color: #8EE7D2;
     --piel-bg-color: #FFE8BC;
+
+    --velocidad:360deg;
 }
 
 
@@ -277,7 +279,7 @@ html{
     from{
         transform: rotateY(0deg);
     }to{
-        transform: rotateY(360deg);
+        transform: rotateY(var(--velocidad));
     }
 }
 
