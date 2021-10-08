@@ -3,7 +3,7 @@ const jsonData = {
     {
       "id": "receta_1",
       "titulo": "Brownie",
-      "ruta": "img/recetas/receta_1.jpg",
+      "ruta": "../img/recetas/receta_1.jpg",
       "Difilcultad": "Fácil",
       "TiempoTotal": "30 minutos",
       "Elaboracion": "10 minutos",
@@ -56,7 +56,7 @@ const jsonData = {
     {
       "id": "receta_2",
       "titulo": "Pastel de manzana, avena y almendra",
-      "ruta": "img/recetas/receta_2.jpg",
+      "ruta": "../img/recetas/receta_2.jpg",
       "Difilcultad": "Fácil",
       "TiempoTotal": "55 minutos",
       "Elaboracion": "10 minutos",
@@ -109,7 +109,7 @@ const jsonData = {
     {
       "id": "receta_3",
       "titulo": "Sorbete de mango y banano ",
-      "ruta": "img/recetas/receta_3.jpg",
+      "ruta": "../img/recetas/receta_3.jpg",
       "Difilcultad": "Fácil",
       "TiempoTotal": "2 horas",
       "Elaboracion": "2 horas",
@@ -141,7 +141,7 @@ const jsonData = {
     {
       "id": "receta_4",
       "titulo": "Rocas de chocolate",
-      "ruta": "img/recetas/receta_4.jpg",
+      "ruta": "../img/recetas/receta_4.jpg",
       "Difilcultad": "Fácil",
       "TiempoTotal": "30 minutos",
       "Elaboracion": "30 minutos",
