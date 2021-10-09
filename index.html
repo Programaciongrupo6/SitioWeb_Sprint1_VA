@@ -7,6 +7,7 @@
     <title>Home</title>
     <link rel="shortcut icon" href="img/logo.png" />
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos_recetas.css">
 </head>
 <body>
     <nav id="nav_drawer">
@@ -44,7 +45,7 @@
             </button>
         </a>
     </nav>
-    <div id="contenedor">
+    <section id="contenedor">
         <section id="section_Home">
             <div id="car">
                 <h1 id="nombre1">
@@ -59,55 +60,57 @@
                     ¡Recuerda que nuestra línea de postres son saludables!
                 </p>
             </div>
+
         </section>
         <section id="section_Recetas">
-            <h1 class="center-align titulo">Nuestras Recetas</h1>
+            <h1 id="titulo-receta" class="center-align titulo">Nuestras Recetas Seleccionadas</h1>
+            <input type="range"min="0" max="4" step="1" id="rangeCarrousel">
             <div class="content-all">
-                <div class="content-carrousel">
+                <div class="content-carrousel" id="content-carrousel">
                     <figure>
-                        <a href="pags/recetas.html#receta_1">
+                        <a href="pags/recetas.html?receta=receta_1">
                             <img src="img/recetas/receta_1.jpg">
+                            <h4>BROWNIE</h4>
                         </a>
-                        <h4> BROWNIE </h4>
                     </figure>
                     <figure>
-                        <a href="pags/recetas.html#receta_2">
+                        <a href="pags/recetas.html?receta=receta_2">
                             <img src="img/recetas/receta_2.jpg">
                         </a>
-                        <h4> PASTEL DE MANZANA </h4>
+                        <h4>PASTEL DE MANZANA, AVENA Y ALMENDRA</h4>
                     </figure>
                     <figure>
-                        <a href="pags/recetas.html#receta_3">
+                        <a href="pags/recetas.html?receta=receta_3">
                             <img src="img/recetas/receta_3.jpg">
                         </a>
                         <h4> SORBETE DE MANGO Y BANANO </h4>
                     </figure>
                     <figure>
-                        <a href="pags/recetas.html#receta_4">
+                        <a href="pags/recetas.html?receta=receta_4">
                             <img src="img/recetas/receta_4.jpg">
                         </a>
                         <h4> ROCAS DE CHOCOLATE </h4>
                     </figure>
                     <figure>
-                        <a href="pags/recetas.html#receta_1">
+                        <a href="pags/recetas.html?receta=receta_1">
                             <img src="img/recetas/receta_1.jpg">
                         </a>
                         <h4> BROWNIE </h4>
                     </figure>
                     <figure>
-                        <a href="pags/recetas.html#receta_2">
+                        <a href="pags/recetas.html?receta=receta_2">
                             <img src="img/recetas/receta_2.jpg">
                         </a>
                         <h4> PASTEL DE MANZANA </h4>
                     </figure>
                     <figure>
-                        <a href="pags/recetas.html#receta_3">
+                        <a href="pags/recetas.html?receta=receta_3">
                             <img src="img/recetas/receta_3.jpg">
                         </a>
                         <h4> SORBETE DE MANGO Y BANANO </h4>
                     </figure>
                     <figure>
-                        <a href="pags/recetas.html#receta_4">
+                        <a href="pags/recetas.html?receta=receta_4">
                             <img src="img/recetas/receta_4.jpg">
                         </a>
                         <h4> ROCAS DE CHOCOLATE </h4>
@@ -115,6 +118,8 @@
                 </div>
             </div>
         </section>
+
+
         <section id="section_productos">
             <div>
             </div>
@@ -123,6 +128,10 @@
             <div>
             </div>
         </section>
-    </div>
+        </div>
+        <script src="js/recetas.js"></script>
+        <script src="js/slider.js"></script>
 </body>
+
+
 </html>

@@ -16,9 +16,18 @@
             <a href="../index.html">
                 <img src="../img/logo.png" alt="">
             </a>
+
+            <ul class="nawRecetas">
+                <li><a href="../index.html"><span>H</span>ome</a></li>
+                <li><a href="../index.html#section_Recetas"><span>R</span>ecetas</a></li>
+                <li><a href="../index.html"><span>M</span>ateria Prima</a></li>
+                <li><a href="../index.html"><span>U</span>tensilios</a></li>
+                <li><a href="../index.html"><span>B</span>log</a></li>
+            </ul>
         </div>
-        <div class="container_recetas">
+        <div class="container_recetas" id="container_recetas">
             <section class="receta" id="receta_1">
+                <!--
                 <h1>Brownie</h1>
                 <img src="../img/recetas/receta_1.jpg" alt="">
                 <h2>Difilcultad: <span>Fácil</span></h2>
@@ -277,8 +286,29 @@
                     <div id="separador_receta"></div>
                 </div>
             </section>
+            -->
+
         </div>
     </div>
+
+    <!--
+    <script type="text/javascript">
+        var paramstr = window.location.search.substr(1);
+        var paramarr = paramstr.split("&");
+        var params = {};
+
+        for (var i = 0; i < paramarr.length; i++) {
+            var tmparr = paramarr[i].split("=");
+            params[tmparr[0]] = tmparr[1];
+        }
+        if (params['receta']) {
+            console.log('El valor del parámetro variable es: ' + params['receta']);
+        } else {
+            console.log('No se envió el parámetro variable');
+        }
+    </script>
+    -->
+    <script src="../js/recetas.js"></script>
 </body>
 
 </html>
