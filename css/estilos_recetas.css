@@ -24,6 +24,10 @@ font-family: 'Nunito Sans', sans-serif;
     height: 80px;
     background-color: var(--azul-bg-color);
     box-shadow: 1px 1px 10px 2px rgb(155, 155, 155);
+    position: fixed;
+    z-index: 100;
+    flex-direction: row;
+    display: flex;
 }
 
 
@@ -34,10 +38,41 @@ font-family: 'Nunito Sans', sans-serif;
 
 }
 
+.nawRecetas{
+    list-style-type: none;
+    overflow: hidden;
+    margin-left: 5%;
+}
+.nawRecetas li {
+    float: left;
+  }
+.nawRecetas span {
+    font-weight: 700;
+    font-size: 19px;
+}
+  .nawRecetas  li a {
+    display: block;
+    color: var(--cafe-bg-color);
+    text-align: center;
+    padding: 29px 16px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .nawRecetas  li a:hover {
+    color: var(--cafe-bg-color);
+    font-size: 20px;
+    font-weight: 900;
+  }
+
+
+
+
 .container_recetas{
     position: absolute;
     width: 80vw;
     left: 10vw;
+    margin-top: 80px;
     
 }
 

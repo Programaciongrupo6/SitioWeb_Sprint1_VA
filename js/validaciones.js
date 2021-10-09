@@ -19,7 +19,6 @@
 
 
 function validar_nombreUsuario(String){
-   console.log("holaa")
    let input = document.getElementById("in_usuario");
    let regxp = /^([a-zA-Z0-9_-]){3,9}$/;
       if(input != regxp){
@@ -35,7 +34,6 @@ function validar_contrasena(String){
       }
    }
 
-
-//module.exports.validar_nombreUsuario = validar_nombreUsuario;
-//module.exports.validar_contrasena = validar_contrasena;
+// module.exports.validar_nombreUsuario = validar_nombreUsuario;
+// module.exports.validar_contrasena = validar_contrasena;
 
