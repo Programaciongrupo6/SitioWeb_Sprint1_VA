@@ -42,6 +42,7 @@ font-family: 'Nunito Sans', sans-serif;
     list-style-type: none;
     overflow: hidden;
     margin-left: 5%;
+    width: 100%;
 }
 .nawRecetas li {
     float: left;
@@ -49,6 +50,9 @@ font-family: 'Nunito Sans', sans-serif;
 .nawRecetas span {
     font-weight: 700;
     font-size: 19px;
+}
+.nawRecetas .actual{
+    border-bottom: 3px solid var(--rojo-bg-color);
 }
   .nawRecetas  li a {
     display: block;
@@ -61,10 +65,31 @@ font-family: 'Nunito Sans', sans-serif;
   
   .nawRecetas  li a:hover {
     color: var(--cafe-bg-color);
-    font-size: 20px;
+    /* font-size: 20px; */
     font-weight: 900;
   }
 
+  .nawRecetas .busqueda{
+    width: 40%;
+    float: right;
+  }
+  .nawRecetas  li  input{
+    width: 100%;
+    display: block;
+    color: var(--cafe-bg-color);
+    text-align: center;
+    padding: 4px 20px;
+    margin: 25px -60px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 15px;
+    border: 1px solid var(--cafe-bg-color);
+    text-align: left;
+  }
+  .nawRecetas  ul{
+    width: 100%;
+  
+  }
 
 
 
