@@ -180,7 +180,8 @@ function inicio(params) {
   if (params['receta']) {
     mensajeFuncion(params['receta'])
   } else {
-    console.log('No se envió el parámetro variable');
+    mensajeFuncion('all')
+    console.log('No se envió el parámetro variable, se mostraran todos');
   }
 }
 
@@ -200,14 +201,19 @@ function mensajeFuncion(params) {
   for (let i = 0; i < recetasArray.length; i++) {
     const element = recetasArray[i];
     console.log(params +"<>"+ element.id)
-    if (params == element.id) {
-      
+    if (params == element.id ) {
       divDeleted = document.getElementById("receta_1");
       if (!divDeleted) { }
       else {
+        console.log('1')
         sectionItem = divDeleted.parentNode;
         sectionItem.removeChild(divDeleted);
       }
+      mostrarReceta(element)
+
+    }else if ( params=='all') {
+      divDeleted = document.getElementById("receta_1");
+     
       mostrarReceta(element)
 
     }
@@ -235,20 +241,8 @@ function mostrarReceta(params) {
   let htmlParte5 = '<h2>Elaboración: <span>' + params.Elaboracion + '</span></h2>'
   let htmlParte6 = '<h2>Cocción: <span>' + params.Coccion + '</span></h2>'
   let htmlParte7 = '<div><h3>Que necesitamos...</h3>' + tablaIngredientes + '<div id="separador"></div>' + descripcionString + '<div id="separador_receta"></div></div>'
-  
-  let htmlUnido = '<div class="receta" id="receta_1">' + htmlParte1 + htmlParte2 + htmlParte3 + htmlParte4 + htmlParte5 + htmlParte6 + htmlParte7 + '</div>'
+    let htmlUnido = '<div class="receta" id="receta_1">' + htmlParte1 + htmlParte2 + htmlParte3 + htmlParte4 + htmlParte5 + htmlParte6 + htmlParte7 + '</div>'
   sectionItem.innerHTML += htmlUnido
-  
-  /*
-  let tituloReceta = document.getElementById('titulo-receta');
-  let sectionRecetas = document.getElementById('section_Recetas')
-  let recetaTitleVista = document.getElementById('receta_title_vista')
-  tituloReceta.style.cssText = 'padding-top: 30px; ba';
-  sectionRecetas.style.cssText = 'height: 60vh; background: rgb(255 245 217);';
-  sectionItem.style.cssText = 'background: rgb(255 245 217);'
-  recetaTitleVista.style.cssText = 'margin-top: 0px;'
-
-*/
 }
 
 
