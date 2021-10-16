@@ -399,9 +399,68 @@ html{
     flex-direction: column;
 }
 
-
-
-
+.titulo_productos {
+    padding-top: 50px;
+}
+.grid_container {
+    padding: 20px;
+    width: 800px;
+    height: 460px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.grid_card {
+    box-shadow: 0px 0px 2px 1px #929090;
+    border-radius: 15px;
+    background-color: white;
+    margin: 5px;
+}
+.card1 {
+    grid-column: 1 / 3;
+}
+.card4 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+}
+.grid_card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 15px 15px 0px 0px;
+}
+.grid_card .categoria {
+    text-align: center;
+}
+.card4 img {
+    width: 100%;
+    height: 435px;
+}
+@media screen and (max-width: 1020px){
+    
+.grid_container {
+    width: 600px;
+    height: 460px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.card4 img {
+    width: 100%;
+    height: 200px;
+}
+.card4 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+.card3 {
+    grid-column: 1 / 3;
+}
+.grid_card img {
+    object-position: center 30%;
+}
+}
 /*_____________________________________________________________________________________*/
 /*____________________________________ SERVICIOS _________________________________________*/
 /*_____________________________________________________________________________________*/
