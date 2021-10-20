@@ -10,28 +10,136 @@
 </head>
 
 <body>
-    <div class="container">
-        <div id="menu">
-            <a href="../index.html">
-                <img src="../img/logo.png" alt="">
-            </a>
+    <header id="menu-superior">
 
-            <ul class="nawRecetas">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./recetas.html">Recetas</a></li>
-                <li><a href="./productos.html"><span class="actual">Productos</span></a></li>
-                <li><a href="../index.html">Blog</a></li>
-                <li class="busqueda"><input type="text" placeholder="buscar"></li>
-            </ul>
+        <div class="container">
+            <div id="menu">
+                <a href="../index.html">
+                    <img src="../img/logo.png" alt="">
+                </a>
+                
+                <ul class="nawRecetas">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./recetas.html">Recetas</a></li>
+                    <li><a href="./productos.html"><span class="actual">Productos</span></a></li>
+                    <li><a href="../index.html">Blog</a></li>
+                    <li class="busqueda">
+                        <input type="text" placeholder="buscar">
+                        <img src="../img/Lupita.png" alt="" id="lupita">
+                    </li>
+                    
+                </ul>
+            </div>
         </div>
-        <div class="container_recetas" id="container_recetas">
-            <section class="receta" id="receta_1">
+        </header>
+        <section class="slider-section">
 
-        </div>
-    </div>
+        </section>
+        <section class="products-section">
+            <div class="products-orden">
+                Ordenar por: 
+                <select name="select">
+                    <option value="value1"> Menor precio</option>
+                    <option value="value2"> Mayor precio</option>
+                    <option value="value5" selected> Más relevantes</option>
 
+                  </select>
+                <!-- <button>
+                    relevantes
+                    <svg class="arrow" width="12" height="12" viewBox="0 0 12 12">
+                        <path fill-opacity=".45" d="M6 7.057L9.352 3.705 10.148 4.5 6 8.648 1.852 4.5 2.648 3.705z"></path>
+                    </svg>
+                </button> -->
+                
+            </div>
+            <div class="container-products">
+                <div class="container-filtrar">
+                    <h3>CATEGORIA</h3>
+                    <h5>Utensilios</h5>
+                    <h5>Equipos</h5>
+                    <h5>Materia prima</h5>
+                    <h5>Dotación</h5>
 
-    <script src="../js/recetas.js"></script>
+                    <h3>PRECIO</h3>
+                    <h5>Menos de $10.000</h5>
+                    <h5>$10.000 - $100.000</h5>
+                    <h5>$100.000 - $1.000.000</h5>
+                    <h5>Más de $1.000.000</h5>
+
+                    <h3>CALIFICACION</h3>
+                    <h5>5 estrellas</h5>
+                    <h5>4 estrellas</h5>
+                    <h5>3 estrellas</h5>
+                    <h5>2 estrellas</h5>
+                    <h5>1 estrellas</h5>
+                    
+                </div>
+                <div class="container-card">
+                    <div class="card"> 
+                        <img src="../img/Productos/Cuchillo pan.png" alt="">
+                        <h5>Cuchillo para pan</h5>
+                        <h6>$21.400</h6>
+                    </div>
+                    <div class="card"> 
+                        <img src="../img/Productos/Cuchillo pan.png" alt="">
+                        <h5>Cuchillo para pan</h5>
+                        <h6>$21.400</h6>
+                    </div>
+                    <div class="card"> 
+                        <img src="../img/Productos/Cuchillo pan.png" alt="">
+                        <h5>Cuchillo para pan</h5>
+                        <h6>$21.400</h6>
+                    </div>
+                    <div class="card"> 
+                        <img src="../img/Productos/Cuchillo pan.png" alt="">
+                        <h5>Cuchillo para pan</h5>
+                        <h6>$21.400</h6>
+                    </div>
+                    <div class="card"> 
+                        <img src="../img/Productos/Cuchillo pan.png" alt="">
+                        <h5>Cuchillo para pan</h5>
+                        <h6>$21.400</h6>
+                    </div>
+                    <div class="card"> 
+                        <img src="../img/Productos/Cuchillo pan.png" alt="">
+                        <h5>Cuchillo para pan</h5>
+                        <h6>$21.400</h6>
+                    </div>
+                    <div class="card"> 
+                        <img src="../img/Productos/Cuchillo pan.png" alt="">
+                        <h5>Cuchillo para pan</h5>
+                        <h6>$21.400</h6>
+                    </div>
+                    <div class="card"> 
+                        <img src="../img/Productos/Cuchillo pan.png" alt="">
+                        <h5>Cuchillo para pan</h5>
+                        <h6>$21.400</h6>
+                    </div>
+                    <div class="card"> 
+                        <img src="../img/Productos/Cuchillo pan.png" alt="">
+                        <h5>Cuchillo para pan</h5>
+                        <h6>$21.400</h6>
+                    </div>
+                    <div class="card"> 
+                        <img src="../img/Productos/Cuchillo pan.png" alt="">
+                        <h5>Cuchillo para pan</h5>
+                        <h6>$21.400</h6>
+                    </div>
+                    <div class="card"> 
+                        <img src="../img/Productos/Cuchillo pan.png" alt="">
+                        <h5>Cuchillo para pan</h5>
+                        <h6>$21.400</h6>
+                    </div>
+                    <div class="card"> 
+                        <img src="../img/Productos/Cuchillo pan.png" alt="">
+                        <h5>Cuchillo para pan</h5>
+                        <h6>$21.400</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <script src="../js/productos.js"></script>
 </body>
 
 </html>
