@@ -80,6 +80,7 @@ float: right;
 .nawRecetas  ul{
   width: 100%;
   
+
 }
 
 .nawRecetas  li  input{
@@ -325,6 +326,7 @@ font-size: 18px;
   z-index: -1;
   transition: all .48s ease;
   display: flex;
+
   
 flex-wrap: wrap;
 margin: auto;
@@ -334,6 +336,7 @@ justify-content: space-evenly;
 .card-product__imgOverlay li {
   display: inline-block;
 }
+
 
 .card-product__imgOverlay li button {
  
@@ -392,6 +395,6 @@ text-align: center;
 
 .footer_section a {
 color: #fbfcfd;
-}
 
+}
 
