@@ -19,6 +19,7 @@
                 <li><a href="#section_Home"><span>H</span>ome</a></li>
                 <li><a href="#section_Recetas"><span>R</span>ecetas</a></li>
                 <li><a href="#section_productos"><span>P</span>roductos</a></li>
+                <li><a href="#section_interactiva"><span>Z</span>ona interactiva</a></li>
                 <li><a href=""><span>B</span>log</a></li>
             </ul>
             <li class="info">
@@ -47,6 +48,7 @@
             </button>
         </a>
     </nav>
+    <img onclick="viewMenu()" class="menu-img" src="img/menu.png" alt="">
     <div id="contenedor">
         <section id="section_Home">
 
@@ -88,6 +90,9 @@
 
         </section>
         <section id="section_Recetas">
+
+            <!-- mejor este carrucel
+            https://www.youtube.com/watch?v=4FWyJCEQBrs -->
             <h1 id="titulo-receta" class="center-align titulo">Nuestras Recetas Seleccionadas</h1>
             <input type="range" min="0" max="4" step="1" id="rangeCarrousel">
             <div class="content-all">
@@ -144,34 +149,124 @@
             </div>
         </section>
         <section id="section_productos">
+<<<<<<< HEAD
             <h1 id="titulo-receta" class="center-align titulo titulo_productos"> Productos</h1>
             <div class="grid_container">
                 <div class="grid_card card1"> 
-                    <img src="img/Productos/utencilios.png" alt="">
-                    <div class="categoria"> Utensilios </div>
+                    <a href="pags/productos.html">
+                        <img src="img/Productos/utencilios.png" alt="">
+                    </a>
+                        <div class="categoria"> Utensilios </div>
                 </div>
                 <div class="grid_card card2">
-                    <img src="/img/Productos/equipos.png" alt="">
-                    <div class="categoria"> Equipos </div>
+                    <a href="pags/productos.html">
+                        <img src="/img/Productos/equipos.png" alt="">
+                    </a>
+                        <div class="categoria"> Equipos </div>
                 </div>
                 <div class="grid_card card3">
-                    <img src="/img/Productos/materia_prima.png" alt="">
-                    <div class="categoria"> Materias primas </div>
+                    <a href="pags/productos.html">
+                        <img src="/img/Productos/materia_prima.png" alt="">
+                    </a>
+                        <div class="categoria"> Materias primas </div>
                 </div>
                 <div class="grid_card card4">
-                    <img src="/img/Productos/dotacion.png" alt="">
+                    <a href="pags/productos.html">
+                        <img src="/img/Productos/dotacion.png" alt="">
+                    </a>
                     <div class="categoria"> Dotación </div>
+=======
+
+            <h1 id="titulo-receta" class="center-align titulo2">Productos </h1>
+            <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, minima. </p>
+            <div class="grid-container">
+                <div class="grid-card card1">
+                    <!-- <a href="pags/productos.html?categoria=categoria_1"> -->
+                    <a href="pags/productos.html?categoria=categoria_1">
+                        <img src="img/Productos/Categorias/utencilios.png" alt="">
+                    </a>
+                    <div class="categoria">
+                        UTENCILIOS
+                    </div>
+                </div>
+                <div class="grid-card card2">
+                    <a href="pags/productos.html?categoria=categoria_2">
+                        <img src="img/Productos/Categorias/equipos.png" alt="">
+                    </a>
+                    <div class="categoria">
+                        EQUIPOS
+                    </div>
+                </div>
+                <div class="grid-card card3">
+                    <a href="pags/productos.html?categoria=categoria_3">
+                        <img src="img/Productos/Categorias/materia_prima.png" alt="">
+                    </a>
+                    <div class="categoria">
+                        MATERIA PRIMA
+                    </div>
+                </div>
+                <div class="grid-card card4">
+                    <a href="pags/productos.html?categoria=categoria_4">
+                        <img src="img/Productos/Categorias/dotacion.png" alt="">
+                    </a>
+                    <div class="categoria">
+                        DOTACIÓN
+                    </div>
+>>>>>>> eb24fe6185119981a6e05afecb756ce8c02a850e
                 </div>
             </div>
 
+        </section>
+        <section id="section_interactiva">
+            <div class="bg">
+
+                <h1 id="titulo-receta" class="center-align titulo2">Cocina interactiva </h1>
+                <p class="descripcion">Prepárate para una nueva forma de crear postres, con nuestra cocina interactiva,
+                    donde encontraras un paso a paso interactivo que te ayudara a mejorar tus habilidades en la
+                    preparación de postres y pasteles.
+                </p>
+                <div class="slider-container">
+                    <div class="contenido-slider">
+                        <img src="img/cocina_interactiva/interactiva_paso1.svg" alt="">
+                        <div class="description">
+                            <h2>Tenemos una sorpresa para ti</h2>
+                        </div>
+                    </div>
+                    <div class="contenido-slider">
+                        <img src="img/cocina_interactiva/interactiva_paso2.svg" alt="">
+                        <div class="description">
+                            <h2>1. Selecciona una receta</h2>
+                        </div>
+                    </div>
+                    <div class="contenido-slider">
+                        <img src="img/cocina_interactiva/interactiva_paso4.svg" alt="">
+                        <div class="description">
+                            <h2>2. <br> Sigue la guía interactiva</h2>
+                        </div>
+                    </div>
+                    <div class="contenido-slider">
+                        <img src="img/cocina_interactiva/interactiva_paso10.svg" alt="">
+                        <div class="description">
+                            <h2>3. <br> Disfruta de tus creaciones</h2>
+
+                        </div>
+                    </div>
+                    <div class="contenido-slider">
+                        <img src="img/cocina_interactiva/interactiva_paso1.svg" alt="">
+                        <div class="description">
+                            <h2>Tenemos una sorpresa para ti</h2>
+                        </div>
+                    </div>
+                </div>
+                <a href="">!Quiero probarlo¡ </a>
+            </div>
         </section>
         <section id="section_servicios">
             <div>
             </div>
         </section>
     </div>
-    <script src="js/recetas.js"></script>
-    <script src="js/slider.js"></script>
+    <!-- <script src="js/recetas.js"></script> -->
     <script src="js/home.js"></script>
     </div>
 </body>
