@@ -1,1 +1,0 @@
-select * from usuarios limit 0,3;
