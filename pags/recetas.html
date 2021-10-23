@@ -6,21 +6,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recetas</title>
-    <link rel="shortcut icon" href="img/logo.png" />
-    <link rel="stylesheet" href="css/estilos_recetas.css">
+    <link rel="shortcut icon" href="../img/logo.png" />
+    <link rel="stylesheet" href="../css/recetas.css">
 </head>
 
 <body>
-    <div class="container">
-        <div id="menu">
-            <a href="index.html">
-                <img src="img/logo.png" alt="">
-            </a>
+    <!-- header section -->
+    <header id="menu-superior">
+        <div class="container">
+            <div id="menu">
+                <a class="img-logo" href="../index.html">
+                    <img src="../img/logo.png" alt="">
+                </a>
+                <ul class="nawRecetas">
+                    <li class="li"><a href="../index.html">Home</a></li>
+                    <li class="li"><a class="actual" href="./recetas.html">Recetas</a></li>
+                    <li class="li"><a href="./productos.html">Productos</a></li>
+                    <li class="li"><a href="./zona_interactiva.html">Zona interactiva</a></li>
+                    <li class="li"><a href="../index.html">Blog</a></li>
+                    <li class="li-busqueda">
+                        <form class="nav-search" action="https://www.mercadolibre.com.co/jm/search" method="GET">
+                            <input type="text" placeholder="Buscar receta" maxlength="120" autofocus=""
+                                autocapitalize="off" autocorrect="off" spellcheck="false" autocomplete="off"
+                                tabindex="2">
+                            <button type="submit" class="nav-button" tabindex="3">
+                                <div role="img" class="nav-search-icon"></div>
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+                <div class="li">
+                    <div class="header-nav">
+                        <div class="color-yes"></div>
+                        <div class="color-no"></div>
+                        <div class="color-yes"></div>
+                        <div class="color-no"></div>
+                        <div class="color-yes"></div>
+                    </div>
+                </div>
+                <div class="container-user">
+                    <div class="user">H</div>
+                </div>
+            </div>
         </div>
-        <div class="container_recetas">
+    </header>
+    <!-- end header section -->
+
+    <div class="container">
+
+        <div class="container_recetas" id="container_recetas">
             <section class="receta" id="receta_1">
+                <!--
                 <h1>Brownie</h1>
-                <img src="img/recetas/receta_1.jpg" alt="">
+                <img src="../img/recetas/receta_1.jpg" alt="">
                 <h2>Difilcultad: <span>Fácil</span></h2>
                 <h2>Tiempo Total: <span>30 minutos</span></h2>
                 <h2>Elaboración: <span>10 minutos</span></h2>
@@ -98,7 +136,7 @@
             </section>
             <section class="receta" id="receta_2">
                 <h1>Pastel de manzana, avena y almendra </h1>
-                <img src="img/recetas/receta_2.jpg" alt="">
+                <img src="../img/recetas/receta_2.jpg" alt="">
                 <h2>Difilcultad: <span>Fácil</span></h2>
                 <h2>Tiempo Total: <span>55 minutos</span></h2>
                 <h2>Elaboración: <span>10 minutos</span></h2>
@@ -174,7 +212,7 @@
             </section>
             <section class="receta" id="receta_3">
                 <h1>Sorbete de mango y banano </h1>
-                <img src="img/recetas/receta_3.jpg" alt="">
+                <img src="../img/recetas/receta_3.jpg" alt="">
                 <h2>Difilcultad: <span>Fácil</span></h2>
                 <h2>Tiempo Total: <span>2 horas</span></h2>
                 <h2>Elaboración: <span>2 horas</span></h2>
@@ -222,7 +260,7 @@
             </section>
             <section class="receta" id="receta_4">
                 <h1>Rocas de chocolate </h1>
-                <img src="img/recetas/receta_4.jpg" alt="">
+                <img src="../img/recetas/receta_4.jpg" alt="">
                 <h2>Difilcultad: <span>Fácil</span></h2>
                 <h2>Tiempo Total: <span>30 minutos</span></h2>
                 <h2>Elaboración: <span>30 minutos</span></h2>
@@ -277,8 +315,20 @@
                     <div id="separador_receta"></div>
                 </div>
             </section>
+            -->
+
         </div>
     </div>
+    <!-- footer section -->
+    <section class="container-fluid footer_section">
+        <p>
+            © 2020 All Rights Reserved By
+            <a href="#">Club Pasteleria</a>
+        </p>
+    </section>
+    <!-- footer section -->
+
+    <script src="../js/recetas.js"></script>
 </body>
 
 </html>
