@@ -20,103 +20,97 @@ box-sizing: border-box;
 
 }
 
-/**************   HEADER     ************/
+/***********************************   HEADER     *************************/
 
 
 
-
+/*general*/
 #menu{
 width: 100%;
 height: 80px;
 background-color: var(--azul-bg-color);
 position: fixed;
 z-index: 100;
-flex-direction: row;
 display: flex;
+flex-direction: row;
 }
 
 
+#menu .img-logo{
+margin-top: 10px;
+margin-left: 30px;
+
+}
 #menu img{
 height: 60px;
-margin-top: 10px;
-margin-left: 10px;
 
 }
 
 .nawRecetas{
 list-style-type: none;
-overflow: hidden;
-margin-left: 5%;
 width: 100%;
+display: flex;
 }
-.nawRecetas li {
+
+.nawRecetas .li {
 float: left;
 }
-.nawRecetas span {
-font-weight: 700;
-font-size: 19px;
+.nawRecetas li:nth-child(0n+4){
+    min-width: 149px;
 }
+
 .nawRecetas .actual{
-border-bottom: 3px solid var(--rojo-bg-color);
+border-bottom: 2px solid var(--rojo-bg-color);
 }
 .nawRecetas  li a {
 display: block;
+height: 26px;
 color: var(--cafe-bg-color);
 text-align: center;
-padding: 29px 16px;
+margin: 27px 10px;
 text-decoration: none;
-font-size: 18px;
+font-size: 16px;
 }
 
 .nawRecetas  li a:hover {
-color: var(--cafe-bg-color);
-font-weight: 900;
+color: #154b57d0;
+border-bottom: 1px outset  #154b57d0;
 }
 
-.nawRecetas .busqueda{
-width: 40%;
+/*input busqueda*/
+.nawRecetas .li-busqueda{
+width: 100%;
 float: right;
-}
-.nawRecetas  ul{
-  width: 100%;
-  
-
 }
 
 .nawRecetas  li  input{
 width: 100%;
-height: 40PX;
+height: 40px;
 display: block;
-margin: 20px -60px;
-
+margin: 20px 0px 20px 0px;
 color: var(--cafe-bg-color);
-font-size: 18px;
+font-size: 16px;
 text-align: left;
-
-
 box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
 padding: 7px 60px 9px 15px;
 border-radius: 2px;
 background-color: #fff;
 border: 0 rgba(0,0,0,.2);
 outline: none;
-
 }
 
 .nav-button{
-
   height: 40px;
   width: 48px;
-  padding-top: 2px;
   top: 20px;
-  right: 60px;
+  right: 100px;
 
   cursor: pointer;
   position: absolute;
 
   border-radius: 0 2px 2px 0;
   border: 0 rgba(0,0,0,.2);
-  background-color: var(--rojo-bg-color);
+  background-color: rgba(223, 223, 223, 0.337);
 }
 
 .nav-search-icon{
@@ -128,9 +122,122 @@ z-index: 200;
 margin: auto;
 }
 
+/*boton menu*/
+.header-nav{
+  width: 40px;
+  height: 30px;
+  margin: 25px 5px 25px 15px;
+  padding: 0;
+  border-radius: 2px;
+  text-decoration: none;
+  display: none;
+}
+
+.color-yes{
+  width: 100%;
+  height: 6px;
+  background-color: ivory;
+  border-radius: 2px;
+}
+.color-no{
+  width: 100%;
+  height: 6px;
+}
+
+/*usuario*/
+.container-user{
+  float: right;
+}
+.container-user .user{
+  height: 50px;
+  width: 50px;
+  margin: 15px 40px 15px 10px;
+  cursor: pointer;
+  border: 0 rgb(0, 0, 0);
+  background-color: rgb(241, 247, 255);
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+
+  font-size: 25px;
+  font-weight: 600;
+}
 
 
-/**************   slider     ************/
+/*media query*/
+@media screen and (max-width: 1200px){
+
+  .nawRecetas li:nth-child(0n+1),
+  li:nth-child(0n+2),
+  li:nth-child(0n+3),
+  li:nth-child(0n+4),
+  li:nth-child(0n+5){
+      display: none;
+  }
+  .header-nav{
+    display: block;
+  }
+  .nawRecetas .busqueda{
+    width: 90%;
+    float: left;
+  }
+  .nav-button {
+    float: left;
+  }
+  .nav-button{
+    top: 20px;
+    right: 160px;
+  }
+
+}
+
+
+@media screen and (max-width: 500px){
+
+  .nawRecetas li:nth-child(0n+6){
+      display: none;
+  }
+  
+  #menu .img-logo{
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+  #menu img{
+  height: 50px;
+  }
+
+  .container-user .user{
+    margin-right: 15px;
+  }
+  .container-user .user{
+    height: 40px;
+    width: 40px;
+    margin: 20px 40px 20px 10px;
+  }
+  .header-nav{
+    height: 25px;
+    margin: 30px 5px 30px 15px;
+  }
+  .color-yes{
+    height: 5px;
+  }
+  .color-no{
+    height: 5px;
+  }
+}
+
+
+
+
+
+
+
+
+/****************************   slider     **********************************/
 
 .slider_section{
 width: 100%;
@@ -214,7 +321,7 @@ margin: 0px 15px 20px 15px;
 }
 
 
-/**************   product     ************/
+/******************************   product     *****************************************/
 
 .product-section{
 width: 100%;
@@ -379,7 +486,7 @@ justify-content: space-evenly;
   background: var(--azul-bg-color);
 }
 
-/**************   footer     ************/
+/********************************************   footer     ************************************************/
 .footer_section {
 background-color: #273135;
 padding: 20px;
