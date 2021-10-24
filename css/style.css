@@ -79,30 +79,27 @@ html{
     font-weight: 900;
     color: var(--cafe-bg-color);
 }
-.info{
-    margin: 15px 0px;
-    list-style:none;
-}
-
 
 .contactanos{
-    width: 180px;
-    height: 100px;
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 20px;
+    color: var(--cafe-bg-color);
 }
 
 .contactanos img{
-    width:  40px;
-    height: 40px;
-    margin-right: -25px;
+    width:  30px;
+    height: 30px;
     margin-top: 20px;
-    border-radius: 10px;
+    border-radius: 50%;
     box-shadow: 1px 1px 5px 1px #6f6f6f85;
 }
 .contactanos img:hover{
     box-shadow: 1px 1px 4px 1px #3f3f3f85;
+    width:40px;
+    height:40px;
+    transition: all 0.5s;
 }
-
-
 
 #buttonreg_nav{
     width: 150px;
@@ -245,160 +242,275 @@ html{
 /*_____________________________________________________________________________________*/
 
 #section_Recetas {
-    width: 100%;
     height: 100vh;
-    background: rgb(255,232,168);
-    background: linear-gradient(0deg, rgba(255,232,168,1) 0%, #898f0fcb 30%, rgba(255, 255, 231, 0.5) 70%, rgba(255,255,255,1) 100%);
-    background: rgba(3, 3, 3, 0.2) local no-repeat 50% 50%;
-    background-size: cover;
-    background-image: url("../img/fondo_6.png");    
-    clip-path: polygon(0 0%, 65% 0, 35% 100%, 0% 100%);
-
+    background-image: linear-gradient(-30deg, #e3ddd9 50%, #ffc964 50%);
+    font-family: 'Raleway', sans-serif;
+    background-size: 100% 100%;
 }
 
-
-.titulo {
-    font-size: 50px;
-    text-align: center;
-    padding-bottom: 0px;
-    padding-top: 150px;
-    color: #000000;
+#section_Recetas .titulo {
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 40px;
+    color: #fff;
     user-select: none;
-    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+    margin-top: 10px;
 }
 
-.content-all{
-    width: 100%;
-    perspective: 1000px;
+
+#section_Recetas .lugar {
+    color: #fff;
+    font-size: 25px;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
+    font-family: 'Dancing Script', cursive;
+    margin-top: 50%;
+}
+
+
+/* estilos materialize carousel*/
+
+.carousel {
+    min-height: 500px;
+}
+
+.carousel .carousel-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding-top: 5%;
+    user-select: none;
+    width: 500px;
+    height: 500px;
 }
 
-.content-carrousel{
-    width: 200px;
-    animation: rotar 50s infinite linear;
-    transform-style: preserve-3d;
-    margin: auto;
-}
-
-
-
-.content-carrousel figure{
+.carousel .carousel-item img {
+    display: flex;
     width: 100%;
     height: 100%;
-    position: absolute;
+    object-fit: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 15px;
 }
 
-
-.content-carrousel h4{
-    font-family: 'Dancing Script', cursive;
-    text-align: center;
-    text-decoration: none;
+.carousel .indicators .indicator-item {
+    border-radius: 0;
+    transform: rotate(45deg);
+    margin: 0 15px;
+    background: black;
 }
 
-.content-carrousel figure:nth-child(1){
-    transform: rotateY(0deg) translateZ(300px);
-}
-.content-carrousel figure:nth-child(2){
-    transform: rotateY(45deg) translateZ(300px);
-}
-.content-carrousel figure:nth-child(3){
-    transform: rotateY(90deg) translateZ(300px);
-}
-.content-carrousel figure:nth-child(4){
-    transform: rotateY(135deg) translateZ(300px);
-}
-.content-carrousel figure:nth-child(5){
-    transform: rotateY(180deg) translateZ(300px);
-}
-.content-carrousel figure:nth-child(6){
-    transform: rotateY(225deg) translateZ(300px);
-}
-.content-carrousel figure:nth-child(7){
-    transform: rotateY(270deg) translateZ(300px);
-}
-.content-carrousel figure:nth-child(8){
-    transform: rotateY(315deg) translateZ(300px);
-}
+@media screen and (min-width:280px) {
 
-.content-carrousel img{
-    width: 200px;
-    align-items: center;
-    box-shadow: 1px 1px 5px 2px rgb(123, 123, 123);
-}
-.content-carrousel img:hover{
-    width: 210px;
-    align-items: center;
-    margin-top: -5px;
-    margin-right: -5px;
-    border: 1px solid rgb(255, 255, 255);
-    box-shadow: 1px 1px 5px 2px rgb(255, 255, 255);
-}
-
-@keyframes rotar{
-    from{
-        transform: rotateY(0deg);
-    }to{
-        transform: rotateY(60deg);
+    #section_Recetas {
+        min-height: 100vh;
+        background-image: linear-gradient(-30deg, #e3ddd9 50%, #ffc964 50%);
+        font-family: 'Raleway', sans-serif;
+        background-size: 100% 100%;
+    }
+    .titulo {
+        font-size: 20px;
+        font-family: 'Dancing Script', cursive;
+        margin-bottom: 40px;
+        color: #fff;
+        user-select: none;
+    }
+    .container {
+        width: 10px;
+        height: 10px;
+    }
+    .subtitulo {
+        margin: 0;
+        color: #000;
+        display: inline;
+        font-size: 5px;
+        font-weight: 100;
+        text-transform: uppercase;
+    }
+    .lugar {
+        color: #fff;
+        margin: 7px 0;
+        font-size: 20px;
+        font-weight: 600;
+        text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
+        font-family: 'Dancing Script', cursive;
+        margin-top: 0;
+    }
+    .linea-division {
+        width: 80%;
+        height: 1px;
+        background-color: #36221c;
+    }
+    /* estilos materialize carousel*/
+    .carousel {
+        min-height: 50px;
+    }
+    .carousel .carousel-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        user-select: none;
+        width: 200px;
+        height: 200px;
+    }
+    .carousel .carousel-item img {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 15px;
+    }
+    .carousel .indicators .indicator-item {
+        border-radius: 0;
+        transform: rotate(45deg);
+        margin: 0 15px;
+        background: black;
     }
 }
-@keyframes rotarAdelante{
-    from{
-        transform: rotateY(0deg);
-    }to{
-        transform: rotateY(360deg);
+
+@media screen and (min-width:320px) {
+    #section_Recetas {
+        min-height: 100vh;
+        background-image: linear-gradient(-30deg, hsl(189, 85%, 87%) 50%, #ffc964 50%);
+        font-family: 'Raleway', sans-serif;
+        background-size: 100% 100%;
+    }
+    .titulo {
+        font-size: 40px;
+        font-family: 'Dancing Script', cursive;
+        margin-bottom: 40px;
+        color: #fff;
+        user-select: none;
+    }
+    .subtitulo {
+        margin: 0;
+        color: #000;
+        display: inline;
+        font-size: 50px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    .lugar {
+        color: #fff;
+        margin: 7px 0;
+        font-size: 50px;
+        font-weight: 600;
+        text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
+        font-family: 'Dancing Script', cursive;
+        margin-top: 0;
+    }
+    .linea-division {
+        width: 80%;
+        height: 2px;
+        background-color: #36221c;
+    }
+    /* estilos materialize carousel*/
+    .carousel {
+        min-height: 500px;
+    }
+    .carousel .carousel-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        user-select: none;
+        width: 500px;
+        height: 500px;
+    }
+    .carousel .carousel-item img {
+        display: inline;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 15px;
+    }
+    .carousel .indicators .indicator-item {
+        border-radius: 0;
+        transform: rotate(45deg);
+        margin: 0 15px;
+        background: black;
     }
 }
 
-@keyframes rotarAtras{
-    from{
-        transform: rotateY(0deg);
-    }to{
-        transform: rotateY(-360deg);
+@media screen and (min-width:540px) {
+    body {
+        min-height: 100vh;
+        background-image: linear-gradient(-45deg, #e3ddd9 50%, #ffc964 50%);
+        font-family: 'Raleway', sans-serif;
+        background-size: 100% 100%;
+    }
+    .titulo {
+        font-size: 40px;
+        font-family: 'Dancing Script', cursive;
+        margin-bottom: 40px;
+        color: #fff;
+        user-select: none;
+    }
+    .subtitulo {
+        margin: 0;
+        color: #000;
+        display: inline;
+        font-size: 50px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    .lugar {
+        color: #fff;
+        margin: 7px 0;
+        font-size: 50px;
+        font-weight: 600;
+        text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
+        font-family: 'Dancing Script', cursive;
+        margin-top: 0;
+    }
+    .linea-division {
+        width: 80%;
+        height: 2px;
+        background-color: #36221c;
+    }
+    /* estilos materialize carousel*/
+    .carousel {
+        min-height: 500px;
+    }
+    .carousel .carousel-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        user-select: none;
+        width: 500px;
+        height: 500px;
+    }
+    .carousel .carousel-item img {
+        display: inline;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 15px;
+    }
+    .carousel .indicators .indicator-item {
+        border-radius: 0;
+        transform: rotate(45deg);
+        margin: 0 15px;
+        background: black;
     }
 }
-@keyframes rotarAdelanteFull{
-    from{
-        transform: rotateY(0deg);
-    }to{
-        transform: rotateY(560deg);
-    }
-}
-
-@keyframes rotarAtrasFull{
-    from{
-        transform: rotateY(0deg);
-    }to{
-        transform: rotateY(-560deg);
-    }
-}
-
-
-#rangeCarrousel{
-    width: 25%;
-    min-width: 100px;
-    max-width: 200px;
-    margin-left: 40%;
-    margin-top: 30px;
-    -webkit-appearance: none; 
-    height:2px;
-    cursor: pointer;
-    border-radius: 10px;
-    background: rgb(77, 60, 16);
-    margin-bottom: 10px;
-}
-
-#rangeCarrousel::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    border: 1px solid rgb(135, 138, 140);
-    height: 20px;
-    width: 30px;
-    border-radius: 20px;
-    background:rgb(121, 121, 94);
-    box-shadow: 0px 0px 4px 0px white;
-    cursor: pointer;
-    margin-top: 0px; 
-  }
 
 /*_____________________________________________________________________________________*/
 /*____________________________________ productos _________________________________________*/

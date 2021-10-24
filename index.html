@@ -8,6 +8,8 @@
     <title>Home</title>
     <link rel="shortcut icon" href="img/logo.png" />
     <link rel="stylesheet" href="css/style.css">
+    <!--materialize.css-->
+    <link rel="stylesheet" href="css/materialize.css">
 </head>
 
 
@@ -22,11 +24,13 @@
                 <li><a href="#section_interactiva"><span>Z</span>ona interactiva</a></li>
                 <li><a href=""><span>B</span>log</a></li>
             </ul>
-            <li class="info">
-            <li class="info"><a href="mailto:programaciongrupo6.2021@gmail.com">Contactanos</a></li>
             <div class="contactanos">
+                <h6><center>CONTACTANOS</center></h6>
                 <a href="https://www.facebook.com/CLUB.PASTELERO.21" target="_blank">
                     <img src="img/facebook.png" alt="" class="contacto">
+                </a>
+                <a href="mailto:programaciongrupo6.2021@gmail.com" target="_blank">
+                    <img src="img/correo.png" alt="" class="contacto">
                 </a>
                 <a href="https://api.whatsapp.com/send?phone=573173927733&text=Me%20interesa%20saber%20m%C3%A1s%20sobre%20los%20productos%20de%20pasteler%C3%ADa"
                     target="_blank">
@@ -51,7 +55,6 @@
     <img onclick="viewMenu()" class="menu-img" src="img/menu.png" alt="">
     <div id="contenedor">
         <section id="section_Home">
-
             <div id="car">
                 <div class="shadowLogo">
                     <div id="logo_0" class="_0">
@@ -87,66 +90,32 @@
                     </p>
                 </div>
             </div>
-
         </section>
         <section id="section_Recetas">
-
-            <!-- mejor este carrucel
-            https://www.youtube.com/watch?v=4FWyJCEQBrs -->
-            <h1 id="titulo-receta" class="center-align titulo">Nuestras Recetas Seleccionadas</h1>
-            <input type="range" min="0" max="4" step="1" id="rangeCarrousel">
-            <div class="content-all">
-                <div class="content-carrousel" id="content-carrousel">
-                    <figure>
-                        <a href="pags/recetas.html?receta=receta_1">
-                            <img src="img/recetas/receta_1.jpg">
-                        </a>
-                        <h4>BROWNIE</h4>
-                    </figure>
-                    <figure>
-                        <a href="pags/recetas.html?receta=receta_2">
-                            <img src="img/recetas/receta_2.jpg">
-                        </a>
-                        <h4>PASTEL DE MANZANA, AVENA Y ALMENDRA</h4>
-                    </figure>
-                    <figure>
-                        <a href="pags/recetas.html?receta=receta_3">
-                            <img src="img/recetas/receta_3.jpg">
-                        </a>
-                        <h4> SORBETE DE MANGO Y BANANO </h4>
-                    </figure>
-                    <figure>
-                        <a href="pags/recetas.html?receta=receta_4">
-                            <img src="img/recetas/receta_4.jpg">
-                        </a>
-                        <h4> ROCAS DE CHOCOLATE </h4>
-                    </figure>
-                    <figure>
-                        <a href="pags/recetas.html?receta=receta_1">
-                            <img src="img/recetas/receta_1.jpg">
-                        </a>
-                        <h4> BROWNIE </h4>
-                    </figure>
-                    <figure>
-                        <a href="pags/recetas.html?receta=receta_2">
-                            <img src="img/recetas/receta_2.jpg">
-                        </a>
-                        <h4> PASTEL DE MANZANA </h4>
-                    </figure>
-                    <figure>
-                        <a href="pags/recetas.html?receta=receta_3">
-                            <img src="img/recetas/receta_3.jpg">
-                        </a>
-                        <h4> SORBETE DE MANGO Y BANANO </h4>
-                    </figure>
-                    <figure>
-                        <a href="pags/recetas.html?receta=receta_4">
-                            <img src="img/recetas/receta_4.jpg">
-                        </a>
-                        <h4> ROCAS DE CHOCOLATE </h4>
-                    </figure>
+            <div class="containter">
+                <div class="row">
+                    <div class="col s12">
+                        <div class="carousel center center-align">
+                            <h1 class="titulo">NUESTRAS RECETAS</h1>
+                            <div class="carousel-item">
+                                <p class="lugar">BROWNIE RELLENO DE AREQUIPE</p>
+                                <img src="img/recetas/receta_1.jpg" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <p class="lugar">PASTEL DE MANZANA, AVENA Y ALMENDRA</p>
+                                <img src="img/recetas/receta_2.jpg" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <p class="lugar">SORBETE DE MANGO Y BANANO</p>
+                                <img src="img/recetas/receta_3.jpg" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <p class="lugar">ROCAS DE CHOCOLATE</p>
+                                <img src="img/recetas/receta_4.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
         </section>
         <section id="section_productos">
             <h1 id="titulo-receta" class="center-align titulo2">Productos </h1>
@@ -240,6 +209,10 @@
     </div>
     <!-- <script src="js/recetas.js"></script> -->
     <script src="js/home.js"></script>
+    <!--materialize.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js "></script>
+    <!-- JS Main -->
+    <script src="js/main.js"></script>
     </div>
 </body>
 
