@@ -6,25 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recetas</title>
-    <link rel="shortcut icon" href="img/logo.png" />
+    <link rel="shortcut icon" href="../img/logo.png" />
     <link rel="stylesheet" href="../css/recetas.css">
 </head>
 
 <body>
-    <div class="container">
-        <div id="menu">
-            <a href="../index.html">
-                <img src="../img/logo.png" alt="">
-            </a>
-
-            <ul class="nawRecetas">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./recetas.html"><span class="actual">Recetas</span></a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="../index.html">Blog</a></li>
-                <li class="busqueda"><input type="text" placeholder="buscar"></li>
-            </ul>
+    <!-- header section -->
+    <header id="menu-superior">
+        <div class="container">
+            <div id="menu">
+                <a class="img-logo" href="../index.html">
+                    <img src="../img/logo.png" alt="">
+                </a>
+                <ul class="nawRecetas">
+                    <li class="li"><a href="../index.html">Home</a></li>
+                    <li class="li"><a class="actual" href="./recetas.html">Recetas</a></li>
+                    <li class="li"><a href="./productos.html">Productos</a></li>
+                    <li class="li"><a href="./zona_interactiva.html">Zona interactiva</a></li>
+                    <li class="li"><a href="../index.html">Blog</a></li>
+                    <li class="li-busqueda">
+                        <form class="nav-search" action="https://www.mercadolibre.com.co/jm/search" method="GET">
+                            <input type="text" placeholder="Buscar receta" maxlength="120" autofocus=""
+                                autocapitalize="off" autocorrect="off" spellcheck="false" autocomplete="off"
+                                tabindex="2">
+                            <button type="submit" class="nav-button" tabindex="3">
+                                <div role="img" class="nav-search-icon"></div>
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+                <div class="li">
+                    <div class="header-nav">
+                        <div class="color-yes"></div>
+                        <div class="color-no"></div>
+                        <div class="color-yes"></div>
+                        <div class="color-no"></div>
+                        <div class="color-yes"></div>
+                    </div>
+                </div>
+                <div class="container-user">
+                    <div class="user">H</div>
+                </div>
+            </div>
         </div>
+    </header>
+    <!-- end header section -->
+
+    <div class="container">
+
         <div class="container_recetas" id="container_recetas">
             <section class="receta" id="receta_1">
                 <!--
@@ -290,24 +319,15 @@
 
         </div>
     </div>
+    <!-- footer section -->
+    <section class="container-fluid footer_section">
+        <p>
+            © 2020 All Rights Reserved By
+            <a href="#">Club Pasteleria</a>
+        </p>
+    </section>
+    <!-- footer section -->
 
-    <!--
-    <script type="text/javascript">
-        var paramstr = window.location.search.substr(1);
-        var paramarr = paramstr.split("&");
-        var params = {};
-
-        for (var i = 0; i < paramarr.length; i++) {
-            var tmparr = paramarr[i].split("=");
-            params[tmparr[0]] = tmparr[1];
-        }
-        if (params['receta']) {
-            console.log('El valor del parámetro variable es: ' + params['receta']);
-        } else {
-            console.log('No se envió el parámetro variable');
-        }
-    </script>
-    -->
     <script src="../js/recetas.js"></script>
 </body>
 
