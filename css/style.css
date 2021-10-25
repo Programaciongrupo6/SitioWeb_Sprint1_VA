@@ -258,13 +258,11 @@ html{
     margin-top: 10px;
 }
 
-
-#section_Recetas .lugar {
+#section_Recetas .receta {
     color: #fff;
     font-size: 25px;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
     font-family: 'Dancing Script', cursive;
-    margin-top: 50%;
 }
 
 
@@ -280,8 +278,10 @@ html{
     justify-content: center;
     align-items: center;
     user-select: none;
-    width: 500px;
-    height: 500px;
+}
+
+.carousel-item .receta{
+    margin-top: 50%;
 }
 
 .carousel .carousel-item img {
@@ -330,14 +330,12 @@ html{
         font-weight: 100;
         text-transform: uppercase;
     }
-    .lugar {
+    .receta {
         color: #fff;
-        margin: 7px 0;
         font-size: 20px;
         font-weight: 600;
         text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
         font-family: 'Dancing Script', cursive;
-        margin-top: 0;
     }
     .linea-division {
         width: 80%;
@@ -398,7 +396,7 @@ html{
         font-weight: 500;
         text-transform: uppercase;
     }
-    .lugar {
+    .receta {
         color: #fff;
         margin: 7px 0;
         font-size: 50px;
@@ -466,7 +464,7 @@ html{
         font-weight: 500;
         text-transform: uppercase;
     }
-    .lugar {
+    .receta {
         color: #fff;
         margin: 7px 0;
         font-size: 50px;
