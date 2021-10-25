@@ -73,10 +73,6 @@ slider.oninput = function () {
     }
 }
 
-
-
-
-
 window.addEventListener("resize", function () {
     width = sliderIndividual[0].clientWidth;
     console.log(width)
@@ -100,3 +96,4 @@ function slides() {
         }, 1500)
     }
 }
+
