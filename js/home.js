@@ -4,11 +4,6 @@ const contenedor = document.getElementById('contenedor')
 const logo = document.getElementById('logo_0')
 let bandera = true
 
-// carrusel
-// let slider = document.getElementById("rangeCarrousel");
-// let tituloReceta = document.getElementById('titulo-receta');
-// let contentCarrousel = document.getElementById('content-carrousel');
-
 
 // cocina interactiva
 let sliderCI = document.querySelector(".slider-container")
@@ -36,9 +31,9 @@ let slider3 = document.getElementsByClassName("slider3")
 //         contenedor.style.width = "calc(100% - 200px)";
 //         bandera = false
 //     }
-
-// document.getElementById('descripcion').innerHTML = window.pageYOffset + 'px';
+    
 // });
+// document.getElementById('descripcion').innerHTML = window.pageYOffset + 'px';
 
 function viewMenu() {
     if (bandera) {
@@ -56,22 +51,6 @@ function viewMenu() {
     }
 }
 
-slider.oninput = function () {
-    console.log(this.value)
-
-    if (this.value == 0) {
-        contentCarrousel.style.animation = "rotarAtrasFull 50s infinite linear";
-    } else if (this.value == 1) {
-        contentCarrousel.style.animation = "rotarAtras 50s infinite linear";
-    } else if (this.value == 2) {
-        contentCarrousel.style.animation = "rotar 50s infinite linear";
-    } else if (this.value == 3) {
-        contentCarrousel.style.animation = "rotarAdelante 50s infinite linear";
-    } else if (this.value == 4) {
-        contentCarrousel.style.animation = "rotarAdelanteFull 50s infinite linear";
-
-    }
-}
 
 window.addEventListener("resize", function () {
     width = sliderIndividual[0].clientWidth;
