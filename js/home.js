@@ -5,9 +5,9 @@ const logo = document.getElementById('logo_0')
 let bandera = true
 
 // carrusel
-let slider = document.getElementById("rangeCarrousel");
-let tituloReceta = document.getElementById('titulo-receta');
-let contentCarrousel = document.getElementById('content-carrousel');
+// let slider = document.getElementById("rangeCarrousel");
+// let tituloReceta = document.getElementById('titulo-receta');
+// let contentCarrousel = document.getElementById('content-carrousel');
 
 
 // cocina interactiva
@@ -23,22 +23,22 @@ let slider3 = document.getElementsByClassName("slider3")
 
 
 
-window.addEventListener('scroll', function () {
-    if (window.pageYOffset < 200) {
-        barraLateral.style.left = (window.pageYOffset - 200) + "px";
-        contenedor.style.margin = "0px 0px 0px " + window.pageYOffset + "px";
-        contenedor.style.width = "calc(100% - " + window.pageYOffset + "px)";
+// window.addEventListener('scroll', function () {
+//     if (window.pageYOffset < 200) {
+//         barraLateral.style.left = (window.pageYOffset - 200) + "px";
+//         contenedor.style.margin = "0px 0px 0px " + window.pageYOffset + "px";
+//         contenedor.style.width = "calc(100% - " + window.pageYOffset + "px)";
 
 
-    } else if (window.pageYOffset >= 200) {
-        barraLateral.style.left = "0px";
-        contenedor.style.margin = "0px 0px 0px 200px";
-        contenedor.style.width = "calc(100% - 200px)";
-        bandera = false
-    }
+//     } else if (window.pageYOffset >= 200) {
+//         barraLateral.style.left = "0px";
+//         contenedor.style.margin = "0px 0px 0px 200px";
+//         contenedor.style.width = "calc(100% - 200px)";
+//         bandera = false
+//     }
 
-    // document.getElementById('descripcion').innerHTML = window.pageYOffset + 'px';
-});
+// document.getElementById('descripcion').innerHTML = window.pageYOffset + 'px';
+// });
 
 function viewMenu() {
     if (bandera) {
@@ -73,10 +73,6 @@ slider.oninput = function () {
     }
 }
 
-
-
-
-
 window.addEventListener("resize", function () {
     width = sliderIndividual[0].clientWidth;
     console.log(width)
@@ -100,3 +96,4 @@ function slides() {
         }, 1500)
     }
 }
+
