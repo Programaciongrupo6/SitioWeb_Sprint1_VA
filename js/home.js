@@ -2,12 +2,8 @@
 const barraLateral = document.getElementById('nav_drawer')
 const contenedor = document.getElementById('contenedor')
 const logo = document.getElementById('logo_0')
+const menuImg = document.getElementById('menu-img')
 let bandera = true
-
-// carrusel
-// let slider = document.getElementById("rangeCarrousel");
-// let tituloReceta = document.getElementById('titulo-receta');
-// let contentCarrousel = document.getElementById('content-carrousel');
 
 
 // cocina interactiva
@@ -36,19 +32,23 @@ let slider3 = document.getElementsByClassName("slider3")
 //         contenedor.style.width = "calc(100% - 200px)";
 //         bandera = false
 //     }
-
-// document.getElementById('descripcion').innerHTML = window.pageYOffset + 'px';
+    
 // });
+// document.getElementById('descripcion').innerHTML = window.pageYOffset + 'px';
 
 function viewMenu() {
+    menuImg.style.transition = "all 1.0s";
+
     if (bandera) {
         //saca el menu
+        menuImg.style.left = "200px";
         barraLateral.style.left = "0px";
         contenedor.style.margin = "0px 0px 0px 200px";
         contenedor.style.width = "calc(100% - 200px)";
         bandera = false
     } else {
         //esconde el menu
+        menuImg.style.left = "00px";
         barraLateral.style.left = "-200px";
         contenedor.style.margin = "0px 0px 0px 0px";
         contenedor.style.width = "calc(100% - 0px)";
@@ -97,3 +97,33 @@ function slides() {
     }
 }
 
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const elementosCarousel = document.querySelectorAll('.carousel');
+    M.Carousel.init(elementosCarousel, {
+        duration: 150,
+        dist: -50,
+        shift: 5,
+        padding: 5,
+        numVisible: 3,
+        indicators: true,
+        noWrap: false
+    });
+});
+
+
+function rec_1() {
+    document.addEventListener.onclick(window.open('pags/recetas.html?receta=receta_1'));
+}
+function rec_2() {
+    document.addEventListener.onclick(window.open('pags/recetas.html?receta=receta_2'));
+}
+function rec_3() {
+    document.addEventListener.onclick(window.open('pags/recetas.html?receta=receta_3'));
+}
+function rec_4() {
+    document.addEventListener.onclick(window.open('pags/recetas.html?receta=receta_4'));
+}
