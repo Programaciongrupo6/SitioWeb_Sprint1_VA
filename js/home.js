@@ -4,10 +4,10 @@ const contenedor = document.getElementById('contenedor')
 const logo = document.getElementById('logo_0')
 let bandera = true
 
-// carrusel
-// let slider = document.getElementById("rangeCarrousel");
-// let tituloReceta = document.getElementById('titulo-receta');
-// let contentCarrousel = document.getElementById('content-carrousel');
+carrusel
+let slider = document.getElementById("rangeCarrousel");
+let tituloReceta = document.getElementById('titulo-receta');
+let contentCarrousel = document.getElementById('content-carrousel');
 
 
 // cocina interactiva
@@ -36,9 +36,9 @@ let slider3 = document.getElementsByClassName("slider3")
 //         contenedor.style.width = "calc(100% - 200px)";
 //         bandera = false
 //     }
-
-// document.getElementById('descripcion').innerHTML = window.pageYOffset + 'px';
+    
 // });
+// document.getElementById('descripcion').innerHTML = window.pageYOffset + 'px';
 
 function viewMenu() {
     if (bandera) {
