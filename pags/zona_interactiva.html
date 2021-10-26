@@ -11,58 +11,102 @@
 </head>
 
 <body>
-    <!-- header section -->
-    <header id="menu-superior">
-        <div class="container">
-            <div id="menu">
-                <a class="img-logo" href="../index.html">
-                    <img src="../img/logo.png" alt="">
-                </a>
-                <ul class="nawRecetas">
-                    <li class="li"><a href="../index.html">Home</a></li>
-                    <li class="li"><a href="./recetas.html">Recetas</a></li>
-                    <li class="li"><a href="./productos.html">Productos</a></li>
-                    <li class="li"><a class="actual" href="./zona_interactiva.html">Zona interactiva</a></li>
-                    <li class="li"><a href="../index.html">Blog</a></li>
-                    <li class="li-busqueda">
-                        <form class="nav-search" action="https://www.mercadolibre.com.co/jm/search" method="GET">
-                            <input type="text" placeholder="Buscar recerta interactiva" maxlength="120" autofocus=""
-                                autocapitalize="off" autocorrect="off" spellcheck="false" autocomplete="off"
-                                tabindex="2">
-                            <button type="submit" class="nav-button" tabindex="3">
-                                <div role="img" class="nav-search-icon"></div>
-                            </button>
-                        </form>
-                    </li>
-                </ul>
-                <div class="li">
-                    <div class="header-nav">
-                        <div class="color-yes"></div>
-                        <div class="color-no"></div>
-                        <div class="color-yes"></div>
-                        <div class="color-no"></div>
-                        <div class="color-yes"></div>
+
+    <div class="fondo">
+        <video class="video" src="../img/Videos/video1.mp4" autoplay loop></video>
+    </div>
+    <div class="Zona-int">
+
+
+        <!--  header section -->
+        <header id="nav_drawer">
+            <a href="../index.html">
+                <img src="../img/logo_nombre-removebg.png" alt="logo" id="navbar_logo" />
+            </a>
+            <h1>Cocina interactiva</h1>
+            <div id="activities">
+                <div id="activity1" class="activity">
+                    <p class="item">Selecciona una receta</p>
+                    <div class="progress"></div>
+                </div>
+                <div id="activity2" class="activity">
+                    <p class="item">Ingredientes</p>
+                    <div class="progress"></div>
+                </div>
+                <div id="activity3" class="activity">
+                    <p class="item">Utensilios y equipos </p>
+                    <div class="progress"></div>
+                </div>
+
+            </div>
+
+        </header>
+        <!-- end header section -->
+
+        <section id="sectio-ZonaInt">
+
+            <div class="container-zonaInt">
+                <div class="title"> PASO1. <span> Selecciona una receta</span> </div>
+                <div class="contend">
+                    <div class="recetas">
+                        <div id="min-receta1" class="card">
+                            <img src="../img/recetas/receta_1.jpg">
+                            <div class="selected"></div>
+                        </div>
+                        <div id="min-receta2" class="card">
+                            <img src="../img/recetas/receta_2.jpg">
+                            <div class="selected"></div>
+                        </div>
+                        <div id="min-receta3" class="card">
+                            <img src="../img/recetas/receta_3.jpg">
+                            <div class="selected"></div>
+                        </div>
+                        <div id="min-receta4" class="card">
+                            <img src="../img/recetas/receta_4.jpg">
+                            <div class="selected"></div>
+                        </div>
+                    </div>
+                    <div class="view">
+                        <div id="view-receta1" class="view-receta">
+                            <img src="../img/recetas/receta_1.jpg">
+                            <h4>TORTA DE AVENA CON ARANDANOS
+                            </h4>
+                        </div>
+                        <div id="view-receta2" class="view-receta">
+                            <img src="../img/recetas/receta_2.jpg">
+                            <h4>PASTEL DE MANZANA, AVENA Y ALMENDRA</h4>
+                        </div>
+                        <div id="view-receta3" class="view-receta">
+                            <img src="../img/recetas/receta_3.jpg">
+                            <h4> SORBETE DE MANGO Y BANANO </h4>
+                        </div>
+                        <div id="view-receta4" class="view-receta">
+                            <img src="../img/recetas/receta_4.jpg">
+                            <h4> ROCAS DE CHOCOLATE </h4>
+                        </div>
                     </div>
                 </div>
-                <div class="container-user">
-                    <div class="user">H</div>
+                <div class="botones">
+                    <button>Atras</button>
+                    <div class="msg"></div>
+                    <a href="../pags/zona_interactiva2.html">
+                        <button>Siguiente</button>
+                    </a>
                 </div>
             </div>
-        </div>
-    </header>
-    <!-- end header section -->
-    <section id="sectio-ZonaInt">
 
-    </section>
- <!-- footer section -->
- <section class="container-fluid footer_section">
-    <p>
-        © 2020 All Rights Reserved By
-        <a href="#">Club Pasteleria</a>
-    </p>
-</section>
-<!-- footer section -->
+        </section>
+        <!-- footer section -->
+        <section class="container-fluid footer_section">
+            <p>
+                © 2020 All Rights Reserved By
+                <a href="#">Club Pasteleria</a>
+            </p>
+        </section>
+        <!-- end footer section -->
 
+    </div>
+    <script src="../js/zona_interactiva.js"></script>
 </body>
 
 </html>
