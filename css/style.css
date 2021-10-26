@@ -254,7 +254,7 @@ html{
     margin-bottom: 40px;
     user-select: none;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 50px;
 
 }
 
@@ -539,6 +539,8 @@ html{
     padding-top: 10px;
     padding-bottom: 10px;
     user-select: none;
+    width: 60%;
+    margin: auto;
 }
 
 

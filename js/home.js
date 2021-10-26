@@ -56,22 +56,22 @@ function viewMenu() {
     }
 }
 
-slider.oninput = function () {
-    console.log(this.value)
+// slider.oninput = function () {
+//     console.log(this.value)
 
-    if (this.value == 0) {
-        contentCarrousel.style.animation = "rotarAtrasFull 50s infinite linear";
-    } else if (this.value == 1) {
-        contentCarrousel.style.animation = "rotarAtras 50s infinite linear";
-    } else if (this.value == 2) {
-        contentCarrousel.style.animation = "rotar 50s infinite linear";
-    } else if (this.value == 3) {
-        contentCarrousel.style.animation = "rotarAdelante 50s infinite linear";
-    } else if (this.value == 4) {
-        contentCarrousel.style.animation = "rotarAdelanteFull 50s infinite linear";
+//     if (this.value == 0) {
+//         contentCarrousel.style.animation = "rotarAtrasFull 50s infinite linear";
+//     } else if (this.value == 1) {
+//         contentCarrousel.style.animation = "rotarAtras 50s infinite linear";
+//     } else if (this.value == 2) {
+//         contentCarrousel.style.animation = "rotar 50s infinite linear";
+//     } else if (this.value == 3) {
+//         contentCarrousel.style.animation = "rotarAdelante 50s infinite linear";
+//     } else if (this.value == 4) {
+//         contentCarrousel.style.animation = "rotarAdelanteFull 50s infinite linear";
 
-    }
-}
+//     }
+// }
 
 window.addEventListener("resize", function () {
     width = sliderIndividual[0].clientWidth;
@@ -83,7 +83,7 @@ setInterval(() => {
 }, interval);
 
 function slides() {
-    let valor = (-(width-(200))*contador);
+    let valor = (-(width-(00))*contador);
     sliderCI.style.transform = "translate("+valor+"px)";
     sliderCI.style.transition  = "transform .7s"
     contador++;
