@@ -3,7 +3,7 @@ let slider = document.querySelector(".slider-container")
 let sliderIndividual = document.querySelectorAll(".contenido-slider")
 let contador = 1;
 let width = sliderIndividual[0].clientWidth;
-let interval = 3000;
+let interval = 5000;
 
 let slider1 = document.getElementsByClassName("slider1")
 let slider2 = document.getElementsByClassName("slider2")
@@ -20,14 +20,17 @@ setInterval(() => {
 function slides() {
 
     slider.style.transform = "translate("+(-width*contador)+"px)";
-    slider.style.transition  = "transform .7s"
+    slider.style.transition  = "transform .7s",
     contador++;
+    
 
     if (contador == sliderIndividual.length) {
         setTimeout(function () {
             slider.style.transform = "translate(0px)";
         slider.style.transition  = "transform 0s"
         contador = 1;
+        
         }, 1500)
     }
+    
 }

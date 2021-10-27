@@ -144,7 +144,8 @@ margin: auto;
   height: 6px;
 }
 
-/*usuario*/
+
+/*usuario
 .container-user{
   float: right;
 }
@@ -168,7 +169,7 @@ margin: auto;
 }
 
 
-/*media query*/
+
 @media screen and (max-width: 1200px){
 
   .nawRecetas li:nth-child(0n+1),
@@ -231,18 +232,39 @@ margin: auto;
 }
 
 
+*/
 
 
 
+/*usuario*/
+.container-user{
+  float: right;
+}
+.container-user .user{
+  height: 50px;
+  width: 50px;
+  margin: 15px 40px 15px 10px;
+  cursor: pointer;
+  border: 0 rgb(0, 0, 0);
+  background-color: rgb(241, 247, 255);
+  border-radius: 10px;
 
 
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+
+  font-size: 25px;
+  font-weight: 600;
+}
 
 /****************************   slider     **********************************/
 
 .slider_section{
 width: 100%;
 padding-top: 80px;
-background-color: rgb(255, 255, 255);
 overflow: hidden;
 }
 
@@ -403,6 +425,8 @@ border-radius: 8px;
 width: 100%;
 height: 300px;
 border-radius: 8px;
+background-size: cover;
+
 }
 .container-card .card h5{
 text-align: center;
@@ -505,3 +529,64 @@ color: #fbfcfd;
 
 }
 
+/*media query*/
+@media screen and (max-width: 1200px){
+
+  .nawRecetas li:nth-child(0n+1),
+  li:nth-child(0n+2),
+  li:nth-child(0n+3),
+  li:nth-child(0n+4),
+  li:nth-child(0n+5){
+      display: none;
+  }
+  .header-nav{
+    display: block;
+  }
+  .nawRecetas .busqueda{
+    width: 90%;
+    float: left;
+  }
+  .nav-button {
+    float: left;
+  }
+  .nav-button{
+    top: 20px;
+    right: 160px;
+  }
+
+}
+
+
+@media screen and (max-width: 500px){
+
+  .nawRecetas li:nth-child(0n+6){
+      display: none;
+  }
+  
+  #menu .img-logo{
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+  #menu img{
+  height: 50px;
+  }
+
+  .container-user .user{
+    margin-right: 15px;
+  }
+  .container-user .user{
+    height: 40px;
+    width: 40px;
+    margin: 20px 40px 20px 10px;
+  }
+  .header-nav{
+    height: 25px;
+    margin: 30px 5px 30px 15px;
+  }
+  .color-yes{
+    height: 5px;
+  }
+  .color-no{
+    height: 5px;
+  }
+}
