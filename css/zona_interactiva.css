@@ -180,8 +180,6 @@ border-radius: 5px;
 .container-zonaInt .recetas .selected{
   width: 14px;
   height: 14px;
-  border: 2px solid #d5d5d5;
-  border-radius: 5px 2px 2px 2px;
   position: absolute;
   top: 7px;
   left: 17px;
@@ -209,10 +207,7 @@ display: none;
 #view-receta1{
 display: flex;
 }
-#min-receta1 .selected{
-background-image: url(../img/iconos/check.png);
-background-size: cover;
-}
+
 
 .view-receta h4{
   margin: 15px;

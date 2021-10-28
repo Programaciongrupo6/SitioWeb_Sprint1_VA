@@ -61,8 +61,8 @@ window.addEventListener('scroll', function () {
 // document.getElementById('descripcion').innerHTML = window.pageYOffset + 'px';
 
 function viewMenu() {
-    menu.style.transition = "all 1.0s";
-    logoSup.style.transition = "all 1.0s";
+    // menu.style.transition = "all 1.0s";
+    menuContainer.style.transition = "all 1.0s";
     let heightSectionHome = sectionHome.clientHeight
     let valueScroll = window.pageYOffset 
 
@@ -71,8 +71,10 @@ function viewMenu() {
         if(valueScroll>=heightSectionHome){
             logoSup.style.opacity = "0"
         }
-        menu.style.margin = "0 5% 0 210px";
-        menu.style.width = "calc(100% - 5% - 210px)";
+
+        menuContainer.style.left = "200px";
+        menu.style.width = "calc(100% - 5% - 221px)";
+        menu.style.margin = "0 5% 0 20px";
         barraLateral.style.left = "0px";
         contenedor.style.margin = "0px 0px 0px 200px";
         contenedor.style.width = "calc(100% - 200px)";
@@ -82,6 +84,7 @@ function viewMenu() {
         if(valueScroll>=heightSectionHome){
             logoSup.style.opacity = "1"
         }
+        menuContainer.style.left = "0px";
         menu.style.margin = "0 5%";
         menu.style.width = "90%";
         barraLateral.style.left = "-200px";
@@ -108,16 +111,13 @@ function viewMenu() {
 //     }
 // }
 
-window.addEventListener("resize", function () {
-    width = sliderIndividual[0].clientWidth;
-    // console.log(width)
-})
 
 setInterval(() => {
     slides()
 }, interval);
 
 function slides() {
+    let width = document.getElementById('section_interactiva').clientWidth
     let valor = (-(width - (00)) * contador);
     sliderCI.style.transform = "translate(" + valor + "px)";
     sliderCI.style.transition = "transform .7s"
@@ -162,3 +162,4 @@ function rec_3() {
 function rec_4() {
     document.addEventListener.onclick(window.open('pags/recetas.html?receta=receta_4'));
 }
+
