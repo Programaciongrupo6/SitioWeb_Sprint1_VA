@@ -1,4 +1,4 @@
-let minutos = 10;
+let minutos = 15;
 let segundos= 0;
 
 //definimos y ejecutamos los segundos de la
@@ -50,5 +50,14 @@ function cargarMinutos(segundos){
     }
     document.getElementById('minutos').innerHTML = txtMinutos;
 }
+
+// tempo = setInterval(cargarSegundo, 1000);
 //Ejecutamos la funcion cada segundo
-setInterval(cargarSegundo, 1000);
+let init = document.getElementById('inicio'); 
+init.addEventListener('click',(ev)=>{
+ev.setInterval(cargarSegundo, 1000);
+});
+
+function temporizador(){
+    setInterval(cargarSegundo, 1000);
+}
