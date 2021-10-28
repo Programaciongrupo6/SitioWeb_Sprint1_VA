@@ -2,7 +2,7 @@
 const barraLateral = document.getElementById('nav_drawer')
 const contenedor = document.getElementById('contenedor')
 const logo = document.getElementById('logo_0')
-const menuImg = document.getElementById('menu-img')
+const menu = document.getElementById('menu')
 let bandera = true
 
 
@@ -18,37 +18,75 @@ let slider2 = document.getElementsByClassName("slider2")
 let slider3 = document.getElementsByClassName("slider3")
 
 
-
-// window.addEventListener('scroll', function () {
-//     if (window.pageYOffset < 200) {
-//         barraLateral.style.left = (window.pageYOffset - 200) + "px";
-//         contenedor.style.margin = "0px 0px 0px " + window.pageYOffset + "px";
-//         contenedor.style.width = "calc(100% - " + window.pageYOffset + "px)";
+let logoSup = document.getElementById("logo-sup")
+let menuContainer = document.getElementById("menu-container")
+let sectionHome = document.getElementById("section_Home")
 
 
-//     } else if (window.pageYOffset >= 200) {
-//         barraLateral.style.left = "0px";
-//         contenedor.style.margin = "0px 0px 0px 200px";
-//         contenedor.style.width = "calc(100% - 200px)";
-//         bandera = false
-//     }
-    
-// });
+
+window.addEventListener('scroll', function () {
+
+    let scrollMin = sectionHome.clientHeight
+    let mitadAlturaSeccion = (scrollMin*(1 / 2.4))
+
+    if (window.pageYOffset > mitadAlturaSeccion) {
+        let valueScroll = window.pageYOffset - mitadAlturaSeccion
+
+        menuContainer.className = "enfocar"
+
+
+        if (valueScroll < mitadAlturaSeccion) {
+            let value = valueScroll / mitadAlturaSeccion
+            menuContainer.style.background = "rgb(142, 231, 210, " + value + ")"
+            menuContainer.style.boxShadow = "0px 0px 20px 2px rgb(119, 119, 119, " + value + ")"
+            if (bandera) {
+                logoSup.style.opacity = value
+            }
+            
+        } else if (valueScroll >= mitadAlturaSeccion) {
+            menuContainer.style.background = "rgb(142, 231, 210, 1)"
+            menuContainer.style.boxShadow = "0px 0px 20px 2px rgb(119, 119, 119, 1)"
+            if (bandera) {
+                logoSup.style.opacity = 1
+            }
+        }
+    } else {
+        menuContainer.style.background = "rgb(142, 231, 210, 0)"
+        menuContainer.style.boxShadow = "0px 0px 20px 2px rgb(119, 119, 119, 0)"
+        logoSup.style.opacity = 0
+        menuContainer.classList.remove("enfocar")
+    }
+
+});
 // document.getElementById('descripcion').innerHTML = window.pageYOffset + 'px';
 
 function viewMenu() {
-    menuImg.style.transition = "all 1.0s";
+    // menu.style.transition = "all 1.0s";
+    menuContainer.style.transition = "all 1.0s";
+    let heightSectionHome = sectionHome.clientHeight
+    let valueScroll = window.pageYOffset 
 
     if (bandera) {
         //saca el menu
-        menuImg.style.left = "200px";
+        if(valueScroll>=heightSectionHome){
+            logoSup.style.opacity = "0"
+        }
+
+        menuContainer.style.left = "200px";
+        menu.style.width = "calc(100% - 5% - 221px)";
+        menu.style.margin = "0 5% 0 20px";
         barraLateral.style.left = "0px";
         contenedor.style.margin = "0px 0px 0px 200px";
         contenedor.style.width = "calc(100% - 200px)";
         bandera = false
     } else {
         //esconde el menu
-        menuImg.style.left = "00px";
+        if(valueScroll>=heightSectionHome){
+            logoSup.style.opacity = "1"
+        }
+        menuContainer.style.left = "0px";
+        menu.style.margin = "0 5%";
+        menu.style.width = "90%";
         barraLateral.style.left = "-200px";
         contenedor.style.margin = "0px 0px 0px 0px";
         contenedor.style.width = "calc(100% - 0px)";
@@ -73,26 +111,23 @@ function viewMenu() {
 //     }
 // }
 
-window.addEventListener("resize", function () {
-    width = sliderIndividual[0].clientWidth;
-    console.log(width)
-})
 
 setInterval(() => {
     slides()
 }, interval);
 
 function slides() {
-    let valor = (-(width-(00))*contador);
-    sliderCI.style.transform = "translate("+valor+"px)";
-    sliderCI.style.transition  = "transform .7s"
+    let width = document.getElementById('section_interactiva').clientWidth
+    let valor = (-(width - (00)) * contador);
+    sliderCI.style.transform = "translate(" + valor + "px)";
+    sliderCI.style.transition = "transform .7s"
     contador++;
 
     if (contador == sliderIndividual.length) {
         setTimeout(function () {
             sliderCI.style.transform = "translate(0px)";
-        sliderCI.style.transition  = "transform 0s"
-        contador = 1;
+            sliderCI.style.transition = "transform 0s"
+            contador = 1;
         }, 1500)
     }
 }
@@ -127,3 +162,4 @@ function rec_3() {
 function rec_4() {
     document.addEventListener.onclick(window.open('pags/recetas.html?receta=receta_4'));
 }
+
