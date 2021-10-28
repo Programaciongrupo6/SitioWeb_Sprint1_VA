@@ -72,21 +72,192 @@ html{
 
 
 
-/*____________INDEX_______________*/
+/***********************************   HEADER     *************************/
 
+#menu-superior {
+    opacity: 1.0;
 
-/*________________________________*/
-/*------------  NAV ------------ */
-/*________________________________*/
-
-
-.menu-img{
-    width: 40px;
-    margin: 10px;
-    position: fixed;
-    cursor:  pointer;
-    z-index: 1000;
 }
+#menu-container{
+    background-color: rgb(142, 231, 210, 0.0);
+    box-shadow: 0px 0px 20px 2px rgb(119, 119, 119, 0.0);
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 100;
+}
+.enfocar{
+backdrop-filter: blur(10px);
+}
+
+
+
+/*general*/
+#menu{
+width: calc(100% - 10%);
+height: 100%;
+margin: 0 5%;
+display: flex;
+flex-direction: row;
+}
+
+
+/*boton menu*/
+.icon-menu{
+    margin: auto;
+}
+.header-nav{
+cursor: pointer;
+width: 40px;
+height: 30px;
+border-radius: 2px;
+text-decoration: none;
+/* display: none; */
+}
+
+.color-yes{
+width: 100%;
+height: 6px;
+background-color: ivory;
+border-radius: 2px;
+}
+.color-no{
+width: 100%;
+height: 6px;
+}
+
+
+
+/*logo*/
+#menu .img-logo{
+width: 100%;
+display: flex;
+}
+#menu img{
+height: 40px;
+margin: auto;
+}
+#logo-sup{
+    opacity: 0;
+}
+
+
+
+/*registro e inicio de sesion*/
+.user-link {
+    text-decoration: none;
+    color: var(--cafe-bg-color);
+    text-align: center;
+    margin: auto;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.signIn{
+    min-width: 120px;
+}
+
+.signUp{
+    border: 1px solid #87430d;
+    padding: 5px 10px;
+    border-radius: 7px;
+}
+
+
+
+
+
+/*usuario*/
+.container-user{
+    display: none;
+float: right;
+}
+.container-user .user{
+height: 50px;
+width: 50px;
+margin: 5px 40px 5px 10px;
+cursor: pointer;
+border: 0 rgb(0, 0, 0);
+background-color: rgb(241, 247, 255);
+border-radius: 10px;
+display: flex;
+justify-content: center;
+align-content: center;
+flex-direction: column;
+text-align: center;
+font-size: 25px;
+font-weight: 600;
+display: none;
+}
+
+
+
+
+
+/*media query*/
+@media screen and (max-width: 1200px){
+
+.nawRecetas li:nth-child(0n+1),
+.nawRecetas li:nth-child(0n+2),
+.nawRecetas li:nth-child(0n+3),
+.nawRecetas li:nth-child(0n+4),
+.nawRecetas li:nth-child(0n+5){
+display: none;
+}
+.header-nav{
+display: block;
+}
+.nawRecetas .busqueda{
+width: 90%;
+float: left;
+}
+.nav-button {
+float: left;
+}
+.nav-button{
+top: 20px;
+right: 160px;
+}
+
+}
+
+/* 
+@media screen and (max-width: 500px){
+
+.nawRecetas li:nth-child(0n+6){
+display: none;
+}
+
+#menu .img-logo{
+margin-top: 15px;
+margin-left: 15px;
+}
+#menu img{
+height: 50px;
+}
+
+.container-user .user{
+margin-right: 15px;
+}
+.container-user .user{
+height: 40px;
+width: 40px;
+margin: 20px 40px 20px 10px;
+}
+.header-nav{
+height: 25px;
+margin: 30px 5px 30px 15px;
+}
+.color-yes{
+height: 5px;
+}
+.color-no{
+height: 5px;
+}
+} */
+
+/***********************************   NAV     *************************/
+
 #nav_drawer {
     position: absolute;
     width: 200px;
@@ -98,6 +269,10 @@ html{
     /* display: none;     */
     left: -200px;
     transition: all 1.0s;
+}
+
+.nav-espacio{
+    height: 60px;
 }
 #navbar_logo{
     width: 150px;
@@ -115,43 +290,17 @@ html{
     text-align: center;
     font-size: 18px;
     text-decoration: none;
-    color: var(--cafe-bg-color);
-    
+    color: var(--cafe-bg-color);        
 }
+
 .naw a:hover {
     font-weight: 700;
     color: var(--cafe-bg-color);
     transition: all 0.5s;
 }
 
-.contactanos{
-    font-size: 20px;
-    font-weight: 900;
-    margin-top: 50px;
-    color: var(--cafe-bg-color);
-}
-
-.contactanos img{
-    width:  30px;
-    height: 30px;
-    margin-top: 20px;
-    border-radius: 50%;
-    box-shadow: 1px 1px 5px 1px #6f6f6f85;
-}
-
-.container-iconos{
-    width: 80%;
-    margin: auto;
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-
-}
-
-.contactanos img:hover{
-    box-shadow: 1px 1px 4px 1px #3f3f3f85;
-    width:40px;
-    height:40px;
-    transition: all 0.5s;
+.naw li{
+    margin: 5px 0;
 }
 
 #buttonreg_nav{
@@ -166,6 +315,7 @@ grid-template-columns: 1fr 1fr 1fr;
     color: var(--cafe-bg-color);
     background-color: rgb(243, 229, 222);
     cursor: pointer;
+    margin-bottom: 20px;
 }
 #buttonlogin_nav{
     width: 150px;
@@ -179,13 +329,14 @@ grid-template-columns: 1fr 1fr 1fr;
     color: var(--cafe-bg-color);
     background-color: rgb(243, 229, 222);
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 #link_registro{
     text-decoration: none;
 }
 
-#buttonreg_nav:hover{
+#buttonreg_nav:hover, #buttonlogin_nav:hover{
     cursor: pointer;
     border: 2px solid var(--cafe-bg-color);
     background-color: var(--piel-bg-color);
