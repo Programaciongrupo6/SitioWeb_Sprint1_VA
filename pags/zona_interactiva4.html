@@ -8,6 +8,7 @@
     <title>Zona interactiva</title>
     <link rel="shortcut icon" href="img/logo.png" />
     <link rel="stylesheet" href="../css/zona_interactiva4.css">
+    <link rel="stylesheet" href="../css/temp.css">
 </head>
 
 <body>
@@ -66,9 +67,18 @@
                         <div class="text">
                             <p>En el Bowl recipiente Batir los huevos, con la leche, el aceite y la esencia.
                             </p>
-                            <h1>Cuenta regresiva</h1>
-                            <h2>00:15:00</h2>
+                            <div class="cont-temporizador">
+                                <div class="bloque">
+                                    <div class="minutos" id="minutos">--</div>
+                                    <p>MINUTOS</p>
+                                </div>
+                                <div class="bloque">
+                                    <div class="segundos" id="segundos">--</div>
+                                    <p>SEGUNDOS</p>
+                                </div>
+                            </div>
                         </div>
+                        <button class="inicio" onclick="temporizador()">INICIAR</button>
                         <img src="../img/iconos/cronometro.png" alt="">
                     </div>
 
@@ -94,6 +104,7 @@
 
     </div>
     <script src="../js/zona_interactiva.js"></script>
+    <script src="../js/temp.js"></script>
 </body>
 
 </html>
