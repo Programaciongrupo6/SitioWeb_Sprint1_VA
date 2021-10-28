@@ -112,6 +112,8 @@ function viewMenu() {
 // }
 
 
+//*** */
+
 setInterval(() => {
     slides()
 }, interval);
