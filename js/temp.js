@@ -1,9 +1,9 @@
-let minutos = 1;
-let segundos = 0;
+let minutos = 10;
+let segundos= 0;
 
 //definimos y ejecutamos los segundos de la
 
-function cargarSegundo(){
+function cargarSegundo(){;
     let txtSegundos;
 
     if(segundos<0){
