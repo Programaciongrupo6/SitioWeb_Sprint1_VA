@@ -35,7 +35,7 @@ function cargarMinutos(segundos){
     if(segundos == -1 && minutos !== 0){
         setTimeout(() =>{
             minutos--;
-        },500) 
+        },500)
     }else if(segundos == -1 && minutos == 0){
         setTimeout(() =>{
             minutos = 0;
