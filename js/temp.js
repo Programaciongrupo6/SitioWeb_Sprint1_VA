@@ -1,10 +1,11 @@
 let minutos = 0;
 let segundos = 5;
-
 //definimos y ejecutamos los segundos de la
+let  sound = function(){
+    document.getElementById('sound').innerHTML= '<audio autoplay><source src="../horse.mp3" type="audio/mpeg"></audio>';
+}
 
 function cargarSegundo() {
-    ;
     let txtSegundos;
 
     if (segundos < 0) {
@@ -22,7 +23,7 @@ function cargarSegundo() {
         setTimeout(() => {
             segundos = 0;
         }, 0)
-        document.getElementById('sound').innerHTML = '<audio autoplay><source src="../horse.mp3" type="audio/mpeg"></audio>';
+        sound();         
     }
     document.getElementById('segundos').innerHTML = txtSegundos;
     segundos--;
@@ -62,6 +63,7 @@ function cargarMinutos(segundos) {
 
 function temporizador() {
     setInterval(cargarSegundo, 1000);
-    document.getElementById("boton-iniciar").style.display = "none"
-    document.getElementById('sound').innerHTML = '<audio autoplay><source src="../horse.mp3" type="audio/mpeg"></audio>';
+    let boton = document.getElementById("boton-iniciar");
+    boton.addEventListener("mouseover", function () { boton.textContent = "Parar" });
+    boton.addEventListener("mouseout", function () { boton.textContent = "Contando" });
 }
